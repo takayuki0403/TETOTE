@@ -1,0 +1,165 @@
+/* base
+============================= */
+/* googleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Viga&display=swap");
+/* variables */
+/* color */
+/* reset
+============================= */
+h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* * {
+  outline: 2px red solid;
+  } */
+/* fontSize */
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 2.6666666667vw;
+  }
+}
+body {
+  font-family: "Noto Sans JP", "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", meiryo, "Noto Serif JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+}
+/* header
+============================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  background-color: transparent;
+  z-index: 100;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+.header__siteLogo {
+  width: 251px;
+  height: 66px;
+}
+.header__headerRight {
+  display: flex;
+}
+.header__btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-right: 40px;
+}
+.header__btn--basic {
+  display: inline-block;
+  width: 126px;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+}
+.header__btn--primary {
+  display: inline-block;
+  width: 126px;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: #AFA86F;
+}
+.header__menu {
+  width: 52px;
+  font-family: viga;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+.header__menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+.header__menu span:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* footer
+============================= */
+/* toppage
+============================= */
+.firstView {
+  width: 100%;
+  height: 824px;
+  position: relative;
+}
+.firstView__siteTitle {
+  position: absolute;
+  top: 34.8%;
+  left: 4.8%;
+  font-family: "Viga";
+  font-size: 9.6rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.firstView__subTitle {
+  position: absolute;
+  top: 73%;
+  left: 0;
+  padding: 17px 4.8%;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #222;
+}
+.firstView__firstViewImg {
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

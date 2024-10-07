@@ -1,0 +1,25 @@
+//mixin
+@use './variables';
+
+@mixin c-btn--s($bgColor:#222) {
+  display: inline-block;
+  width: 126px;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: $bgColor;
+}
+
+
+// mediaQuery
+$sp: 480px;
+$tab: 768px;
+$pc: 1080px;
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+
+
+}
