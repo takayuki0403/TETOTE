@@ -51,22 +51,12 @@ html {
 body {
   font-family: "Noto Sans JP", "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", meiryo, "Noto Serif JP", sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1;
   font-size: 1.6rem;
   background-color: #fff;
   box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
-  .pc-only {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .sp-only {
-    display: none;
-  }
-}
 /* header
 ============================= */
 .header {
@@ -74,7 +64,6 @@ body {
   top: 0;
   width: 100%;
   height: 100px;
-  padding: 10px;
   background-color: transparent;
   z-index: 100;
 }
@@ -82,20 +71,36 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 26px 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .header__wrapper {
+    padding: 0 12px;
+  }
 }
 .header__siteLogo {
   width: 251px;
   height: 66px;
 }
+@media screen and (max-width: 768px) {
+  .header__siteLogo {
+    width: 151px;
+  }
+}
 .header__headerRight {
   display: flex;
+  justify-content: center;
 }
 .header__btnWrapper {
   display: flex;
   align-items: center;
   gap: 22px;
   margin-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  .header__btnWrapper {
+    display: none;
+  }
 }
 .header__btn--basic {
   display: inline-block;
@@ -121,6 +126,12 @@ body {
   text-align: center;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .header__menu {
+    width: 32px;
+    font-size: 10px;
+  }
+}
 .header__menu span {
   display: block;
   width: 100%;
@@ -128,8 +139,18 @@ body {
   margin-bottom: 15px;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .header__menu span {
+    margin-bottom: 9px;
+  }
+}
 .header__menu span:last-of-type {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header__menu span:last-of-type {
+    margin-bottom: 6px;
+  }
 }
 
 /* footer
@@ -141,6 +162,11 @@ body {
   height: 824px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .firstView {
+    height: 100vh;
+  }
+}
 .firstView__siteTitle {
   position: absolute;
   top: 34.8%;
@@ -150,6 +176,13 @@ body {
   line-height: 1.2;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .firstView__siteTitle {
+    top: 62.1%;
+    left: 12px;
+    font-size: min(4.8rem, 60px);
+  }
+}
 .firstView__subTitle {
   position: absolute;
   top: 73%;
@@ -158,8 +191,92 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
   color: #fff;
-  background-color: #222;
+  background: linear-gradient(-60deg, transparent 30px, #222 0) bottom right;
+}
+@media screen and (max-width: 768px) {
+  .firstView__subTitle {
+    top: 82.2%;
+    font-size: min(1.2rem, 20px);
+    padding: 9px 24px 9px 12px;
+    background: linear-gradient(-60deg, transparent 20px, #222 0) bottom right;
+  }
 }
 .firstView__firstViewImg {
   width: 100vw;
+  height: 824px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .firstView__firstViewImg {
+    height: 100vh;
+    object-position: 65%;
+  }
+}
+.firstView__news {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 38px;
+  display: flex;
+  align-items: center;
+  width: 87.7%;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 50px;
+}
+@media screen and (max-width: 768px) {
+  .firstView__news {
+    bottom: 10px;
+    width: calc(100% - 24px);
+    line-height: 1.2;
+  }
+}
+.firstView__newsHead {
+  padding: 19px 60px;
+  font-family: "Viga";
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #fff;
+  background-color: #222;
+  border-radius: 50px 0 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .firstView__newsHead {
+    padding: 19px 12px;
+    font-size: 1rem;
+    height: 100%;
+  }
+}
+.firstView__newsTitle {
+  flex: 1;
+  font-size: 1.6rem;
+  padding-left: 7.5%;
+}
+@media screen and (max-width: 768px) {
+  .firstView__newsTitle {
+    font-size: min(1.2rem, 18px);
+    line-height: 1.7;
+    padding: 10px;
+  }
+}
+.firstView__newsMore {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 47px;
+  font-family: "Viga";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+.firstView__newsMore::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  padding-left: 6px;
+}
+@media screen and (max-width: 768px) {
+  .firstView__newsMore {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

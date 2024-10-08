@@ -1,0 +1,12 @@
+@use '../util/index' as *;
+
+/* intro
+============================= */
+.slickArea {
+
+  &__slickWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+}

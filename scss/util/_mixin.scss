@@ -10,11 +10,20 @@
   background-color: $bgColor;
 }
 
+@mixin posCenterX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin posCenterY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 // mediaQuery
-$sp: 480px;
-$tab: 768px;
-$pc: 1080px;
+$sp: 768px;
 
 @mixin sp {
   @media screen and (max-width: ($sp)) {
