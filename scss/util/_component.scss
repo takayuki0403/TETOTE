@@ -26,7 +26,7 @@
   display: inline-block;
   font-size: 2rem;
   color: $black;
-  background-color: #fff;
+  background-color: #ffffff;
   &::after {
     font-family: "Font Awesome 5 Free";
     content: '\f105';
@@ -39,5 +39,5 @@
 }
 
 @mixin c-title {
-  
+
 }
