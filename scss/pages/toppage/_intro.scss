@@ -1,12 +1,93 @@
-@use '../util/index' as *;
+@use '../../util/index' as *;
 
-/* intro
+/* intro -- slick & message
 ============================= */
 .slickArea {
+  position: relative;
 
   &__slickWrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 34px;
     margin-top: 100px;
+    overflow: hidden;
+    @include sp {
+      gap: 16px;
+      margin-top: 41px;
+      text-align: center;
+    }
+  }
+  &__slickList:nth-child(even) {
+    margin-top: 36px;
+    @include sp {
+      margin-top: 27px;
+    }
+  }
+  &__slickImg {
+    width: 504px;
+    @include sp {
+      width: 271px;
+    }
+  }
+
+  &__catchcopyWrapper {
+    bottom: 10px;
+    @include posCenterX;
+    bottom: 0;
+    @include sp {
+      top: 162px;
+      width: 100%;
+    }
+  }
+  &__catchcopy {
+    margin-bottom: 7px;
+    padding: 7px 11px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.45;
+    color: $black;
+    background-color: #fff;
+    text-align: center;
+    @include sp {
+      margin: 0 auto 15px;
+      font-size: 24px;
+      width: fit-content;
+    }
+  }
+}
+
+.msg {
+  &__readWrapper {
+    margin-top: 100px;
+    background-image: url(../img/map01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    @include sp {
+      background-position: top;
+      background-size: contain;
+    }
+  }
+  &__read {
+    margin-bottom: 52px;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    @include sp {
+      margin-bottom: 39px;
+      font-size: 18px;
+      line-height: 2.5;
+    }
+  }
+  &__btnWrap {
+    width: 100%;
+    text-align: center;
+  }
+  &__btn {
+    @include c-btn--white;
+    padding: 30px 124px;
+    font-family: 'viga';
+    text-transform: uppercase;
+    border: 1px solid $black;
+    
   }
 }

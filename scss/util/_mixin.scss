@@ -1,15 +1,7 @@
 //mixin
-@use './variables';
+@use './variables' as *;
 
-@mixin c-btn--s($bgColor:#222) {
-  display: inline-block;
-  width: 126px;
-  padding: 14px;
-  color: #fff;
-  text-align: center;
-  background-color: $bgColor;
-}
-
+//position
 @mixin posCenterX {
   position: absolute;
   left: 50%;

@@ -1,7 +1,7 @@
-/* toppage
-============================= */
 @use '../../util/index' as *;
 
+/* toppage
+============================= */
 .firstView {
   width: 100%;
   height: 824px;
@@ -87,7 +87,7 @@
     padding-left: 7.5%;
     @include sp {
       font-size: min(1.2rem, 18px);
-      line-height: 1.7calc(100% - 24px);
+      line-height: 1.7;
       padding: 10px;
     }
   }

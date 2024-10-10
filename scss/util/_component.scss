@@ -1,0 +1,43 @@
+//component
+@use './variables' as *;
+
+
+//btn
+@mixin c-btn--s($bgColor:#222) {
+  display: inline-block;
+  width: 126px;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: $bgColor;
+}
+
+@mixin c-btn--m($bgColor:#222) {
+  display: inline-block;
+  width: 126px;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: $bgColor;
+}
+
+@mixin c-btn--white {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  color: $black;
+  background-color: #fff;
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin c-title {
+  
+}

@@ -26,7 +26,6 @@ li {
 }
 
 img {
-  max-width: 100%;
   vertical-align: bottom;
 }
 
@@ -53,6 +52,7 @@ body {
   font-weight: 400;
   line-height: 1;
   font-size: 1.6rem;
+  color: #222;
   background-color: #fff;
   box-sizing: border-box;
 }
@@ -279,4 +279,120 @@ body {
   .firstView__newsMore {
     display: none;
   }
+}
+
+/* intro -- slick & message
+============================= */
+.slickArea {
+  position: relative;
+}
+.slickArea__slickWrapper {
+  display: flex;
+  gap: 34px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .slickArea__slickWrapper {
+    gap: 16px;
+    margin-top: 41px;
+    text-align: center;
+  }
+}
+.slickArea__slickList:nth-child(even) {
+  margin-top: 36px;
+}
+@media screen and (max-width: 768px) {
+  .slickArea__slickList:nth-child(even) {
+    margin-top: 27px;
+  }
+}
+.slickArea__slickImg {
+  width: 504px;
+}
+@media screen and (max-width: 768px) {
+  .slickArea__slickImg {
+    width: 271px;
+  }
+}
+.slickArea__catchcopyWrapper {
+  bottom: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .slickArea__catchcopyWrapper {
+    top: 162px;
+    width: 100%;
+  }
+}
+.slickArea__catchcopy {
+  margin-bottom: 7px;
+  padding: 7px 11px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.45;
+  color: #222;
+  background-color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .slickArea__catchcopy {
+    margin: 0 auto 15px;
+    font-size: 24px;
+    width: fit-content;
+  }
+}
+
+.msg__readWrapper {
+  margin-top: 100px;
+  background-image: url(../img/map01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .msg__readWrapper {
+    background-position: top;
+    background-size: contain;
+  }
+}
+.msg__read {
+  margin-bottom: 52px;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .msg__read {
+    margin-bottom: 39px;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+}
+.msg__btnWrap {
+  width: 100%;
+  text-align: center;
+}
+.msg__btn {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  color: #222;
+  background-color: #fff;
+  padding: 30px 124px;
+  font-family: "viga";
+  text-transform: uppercase;
+  border: 1px solid #222;
+}
+.msg__btn::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
