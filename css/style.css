@@ -1,7 +1,7 @@
 /* base
 ============================= */
 /* googleFonts */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@300;400;700;900&family=Viga&display=swap");
 /* variables */
 /* color */
 /* reset
@@ -316,11 +316,15 @@ body {
   }
 }
 .slickArea__catchcopyWrapper {
-  bottom: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .slickArea__catchcopyWrapper {
@@ -341,7 +345,7 @@ body {
 @media screen and (max-width: 768px) {
   .slickArea__catchcopy {
     margin: 0 auto 15px;
-    font-size: 24px;
+    font-size: clamp(20px, 6.25vw, 24px);
     width: fit-content;
   }
 }
@@ -368,7 +372,7 @@ body {
 @media screen and (max-width: 768px) {
   .msg__read {
     margin-bottom: 39px;
-    font-size: 18px;
+    font-size: clamp(15px, 4.7vw, 18px);
     line-height: 2.5;
   }
 }
@@ -393,6 +397,15 @@ body {
   font-weight: 900;
   position: absolute;
   right: 20px;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}/*# sourceMappingURL=style.css.map */
+}
+@media screen and (max-width: 768px) {
+  .msg__btn {
+    padding: 23px 96px;
+  }
+}
+
+/* member
+============================= *//*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 //component
 @use './variables' as *;
-
+@use './mixin' as *;
 
 //btn
 @mixin c-btn--s($bgColor:#222) {
@@ -33,11 +33,22 @@
     font-weight: 900;
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    @include posCenterY;
   }
 }
 
 @mixin c-title {
-
+  position: absolute;
+  @include posCenterX;
+  @include posCenterY;
+  font-size: 5.2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+@mixin c-subTitle {
+  position: relative;
+  font-family: 'Poppins';
+  font-weight: regular;
+  font-size: 13.6rem;
+  color: rgba(151, 151, 151, .1);
 }

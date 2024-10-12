@@ -30,9 +30,13 @@
   }
 
   &__catchcopyWrapper {
-    bottom: 10px;
     @include posCenterX;
-    bottom: 0;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     @include sp {
       top: 162px;
       width: 100%;
@@ -49,7 +53,7 @@
     text-align: center;
     @include sp {
       margin: 0 auto 15px;
-      font-size: 24px;
+      font-size: clamp(20px,6.25vw, 24px);
       width: fit-content;
     }
   }
@@ -74,7 +78,7 @@
     text-align: center;
     @include sp {
       margin-bottom: 39px;
-      font-size: 18px;
+      font-size: clamp(15px, 4.7vw, 18px);
       line-height: 2.5;
     }
   }
@@ -88,6 +92,8 @@
     font-family: 'viga';
     text-transform: uppercase;
     border: 1px solid $black;
-    
+    @include sp {
+      padding: 23px 96px;
+    }
   }
 }
