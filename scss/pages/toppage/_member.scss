@@ -2,3 +2,102 @@
 
 /* member
 ============================= */
+.member {
+  
+  &__wrapper {
+    position: relative;
+    margin-top: 121px;
+    padding-bottom: 63px;
+    @include sp {
+      padding-bottom: 72px;
+    }
+  }
+
+  &__memberItemWrap {
+    margin-top: 52px;
+  }
+  &__btn {
+    @include c-btn--white;
+  }
+  &__ArrowWrap {
+    position: absolute;
+    right: 0;
+    bottom: 74px;
+    @include sp {
+      display: none;
+    }
+  }
+}
+
+.memberItem {
+    display: flex;
+    gap: 43px;
+    margin-bottom: 80px;
+    @include sp {
+      gap: 23px;
+      margin-bottom: 64px;
+    }
+
+  &__list {
+    position: relative;
+    width: 300px;
+    @include sp {
+      width: 246px;
+    }
+    &:nth-child(even) {
+      margin-top: 36px;
+      @include sp {
+        margin-top: 25px;
+      }
+    }
+  }
+  &__list img {
+    margin-bottom: 34px;
+    @include sp {
+      width: 246px;
+    }
+  }
+  &__msgWrap {
+    position: absolute;
+    left: 0;
+    top: 331px;
+    margin-bottom: 1em;
+    @include sp {
+      top: 261px;
+    }
+  }
+  &__msg {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 5px 7px;
+    font-size: 20px;
+    line-height: 1;
+    background-color: $subColor;
+    @include sp {
+      padding: 7px;
+      font-size: 16px;
+    }
+  }
+  &__carrerWrap {
+    display: flex;
+    gap: 9px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    @include sp {
+      margin-bottom: 14px;
+    }
+  }
+  &__carrerWrap > p {
+    font-weight: bold;
+    @include sp {
+      font-size: 12px;
+    }
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: bold;
+    @include sp {
+      font-size: 20px;
+    }
+  }
+}

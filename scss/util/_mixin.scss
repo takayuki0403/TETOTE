@@ -2,6 +2,13 @@
 @use './variables' as *;
 
 //position
+@mixin posCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin posCenterX {
   position: absolute;
   left: 50%;

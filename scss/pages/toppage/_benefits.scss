@@ -1,0 +1,116 @@
+@use '../../util/index' as *;
+
+/* benefits
+============================= */
+.benefits {
+  margin-bottom: 107px;
+
+  &__titleWrap {
+    margin: 0 auto;
+  } 
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    @include sp {
+      text-align: left;
+    }
+  }
+
+  &__read {
+    text-align: center;
+    @include sp {
+      text-align: left;
+    }
+  }
+
+  &__itemWrap {
+    display: flex;
+    gap: 94px;
+    margin-top: 114px;
+    @include sp {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    max-width: 430px;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &__itemImgBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 430px;
+    background-color: $bgColor;
+    border-radius: 50%;
+    @include sp {
+      width: 251px;
+      height: 251px;
+      margin: 0 auto;
+    }
+  }
+  &__itemImg {
+    @include posCenter;
+    @include sp {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__itemImg--people img {
+    @include sp {
+    width: 63%;
+    }
+  }
+  &__itemImg--house img {
+    @include sp {
+      width: 80.5%;
+    }
+  }
+  
+  &__itemTitle {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: -51px;
+    padding: 5px 7px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    background-color: $subColor;
+    @include sp {
+      margin-top: -15px;
+      font-size: 24px;
+    }
+  }
+  &__itemSubTitle {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-family: 'Viga';
+    font-size: 2.4rem;
+    letter-spacing: 0.15em;
+    writing-mode: vertical-rl;
+    @include sp {
+      font-size: 1.4rem;
+      right: 13px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 66px;
+    @include sp {
+      right: 13px;
+      bottom: 32px;
+    }
+  }
+
+  &__itemDesc {
+    width: 100%;
+    margin-top: 27px;
+    line-height: 1.5;
+  }
+}

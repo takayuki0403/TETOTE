@@ -23,32 +23,98 @@
 
 @mixin c-btn--white {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 30px 124px;
+  font-family: 'viga';
+  text-transform: uppercase;
   font-size: 2rem;
   color: $black;
   background-color: #ffffff;
+  border: 1px solid $black;
+  @include sp {
+    padding: 23px 96px;
+  }
+  
   &::after {
     font-family: "Font Awesome 5 Free";
     content: '\f105';
     font-weight: 900;
     position: absolute;
     right: 20px;
-    @include posCenterY;
   }
 }
 
-@mixin c-title {
-  position: absolute;
-  @include posCenterX;
-  @include posCenterY;
+//title
+.c-titleWrap {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.c-title {
+  @include posCenter;
   font-size: 5.2rem;
   font-weight: bold;
   z-index: 1;
+  @include sp {
+    font-size: 3.2rem;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  > span {
+    border-bottom: 1px solid $black; }
 }
-@mixin c-subTitle {
-  position: relative;
+.c-subTitle {
+  display: block;
   font-family: 'Poppins';
-  font-weight: regular;
+  font-weight: 400;
   font-size: 13.6rem;
+  text-transform: uppercase;
   color: rgba(151, 151, 151, .1);
+  @include sp {
+    font-size: 8rem;
+  }
+}
+
+//sectionRead
+.c-sectionRead {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  @include sp {
+    margin-top: 19px;
+  }
+}
+
+//layout
+.ly-contentWrap {
+  max-width: 956px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include sp {
+    padding: 0 17px;
+  }
+}
+
+//arrow
+.c-arrowWrap {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+}
+.c-arrow {
+  display: inline-block;
+  padding: 21px;
+  background-color: #fff;
+  border: 1px solid $black;
+  border-radius: 50%;
+  @include sp {
+    padding: 13px;
+  }
+
+  &--black {
+    color: #fff;
+    background-color: $black;
+  }
 }

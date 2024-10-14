@@ -88,12 +88,5 @@
   }
   &__btn {
     @include c-btn--white;
-    padding: 30px 124px;
-    font-family: 'viga';
-    text-transform: uppercase;
-    border: 1px solid $black;
-    @include sp {
-      padding: 23px 96px;
     }
   }
-}
