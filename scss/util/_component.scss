@@ -2,26 +2,33 @@
 @use './variables' as *;
 @use './mixin' as *;
 
+//layout
+.ly-contentWrap {
+  max-width: 956px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include sp {
+    padding: 0 17px;
+  }
+}
+
 //btn
-@mixin c-btn--s($bgColor:#222) {
+.c-btn {
   display: inline-block;
   width: 126px;
   padding: 14px;
-  color: #fff;
   text-align: center;
-  background-color: $bgColor;
+  color: #fff;
+}
+.c-btn--basic {
+  background-color: $black;
 }
 
-@mixin c-btn--m($bgColor:#222) {
-  display: inline-block;
-  width: 126px;
-  padding: 14px;
-  color: #fff;
-  text-align: center;
-  background-color: $bgColor;
+.c-btn--primary {
+  background-color: $subColor;
 }
 
-@mixin c-btn--white {
+.c-btn--arrow {
   position: relative;
   display: block;
   width: fit-content;
@@ -54,6 +61,7 @@
 }
 .c-title {
   @include posCenter;
+  width: 100%;  
   font-size: 5.2rem;
   font-weight: bold;
   z-index: 1;
@@ -63,7 +71,8 @@
     transform: translate(0, -50%);
   }
   > span {
-    border-bottom: 1px solid $black; }
+    border-bottom: 1px solid $black; 
+  }
 }
 .c-subTitle {
   display: block;
@@ -84,16 +93,6 @@
   line-height: 1.5;
   @include sp {
     margin-top: 19px;
-  }
-}
-
-//layout
-.ly-contentWrap {
-  max-width: 956px;
-  margin: 0 auto;
-  overflow: hidden;
-  @include sp {
-    padding: 0 17px;
   }
 }
 
@@ -118,3 +117,85 @@
     background-color: $black;
   }
 }
+
+//card
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 52px;
+  row-gap: 23px;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 61px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    width: 47%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 156px;
+    height: 182px;
+    @include sp {
+      width: 121px;
+      height: 121px;
+    }
+  }
+
+  &__img img {
+    width: 156px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @include sp {
+      width: 100%;
+    }
+  }
+
+
+
+  &__body {
+    position: relative;
+    padding: 20px 23px;
+    @include sp {
+      flex: 1;
+      padding: 8px 7px 5px 18px;
+    }
+  }
+
+  &__category {
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    margin-top: 23px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: underline;
+    @include sp {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    left: 23px;
+    bottom: 20px;
+    margin-top: auto;
+    font-size: 1.2rem;
+    @include sp {
+      left: 18px;
+      bottom: 5px;
+    }
+  }
+};

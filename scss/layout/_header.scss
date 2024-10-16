@@ -44,14 +44,6 @@
     }
   }
 
-  &__btn--basic {
-    @include c-btn--s();
-  }
-
-  &__btn--primary {
-    @include c-btn--s($subColor);
-  }
-
   &__menu {
     width: 52px;
     font-family: viga;

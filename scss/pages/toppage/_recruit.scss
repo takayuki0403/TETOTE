@@ -1,0 +1,62 @@
+@use '../../util/index' as *;
+
+/* recruit
+============================= */
+.recruit {
+  background-color: $bgColor;
+
+  &__wrapper {
+    padding-top: 45px;
+    padding-bottom: 139px;
+    @include sp {
+      padding-top: 2px;
+      padding-bottom: 88px;
+    }
+  }
+
+  &__titleWrap {
+    text-align: center;
+    @include sp {
+      text-align: left;
+    }
+  }
+  &__read {
+    text-align: center;
+    @include sp {
+      text-align: left;
+    }
+  }
+
+  &__btnList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 21px;
+    margin-top: 64px;
+    @include sp {
+      grid-template-columns: 1fr;
+      column-gap: 19px;
+      margin-top: 28px;
+    }
+  }
+  &__btn {
+    width: calc(100% - 16px);
+    &:last-child {
+      grid-column: 1 / 3 !important;
+    }
+    @include sp {
+      width: 100%;
+      &:last-child {
+        grid-column: 1 / 1 !important;
+      }
+    }
+  }
+
+  &__btnText {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    color: $black;
+  }
+}

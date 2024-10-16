@@ -2,3 +2,70 @@
 
 /* footer
 ============================= */
+.footer {
+  max-width: 1312px;
+  margin: 0 auto 61px;
+  padding-top: 198px;
+  padding-bottom: 61px;
+  background-color: $bgColor;
+  &.footer {
+    padding-top: 169px;
+    padding-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include sp {
+      flex-direction: column;
+    }
+  }
+
+  &__rightWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 61px;
+    width: 61.5%;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-top: 25px;
+    padding-right: calc(31px - 22px);
+  }
+  &__navLink {
+    font-weight: bold;
+  }
+
+  &__snsList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+  }
+  &__snsLogo {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: #484848;
+  }
+
+  &__leftWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__siteLogo {
+    width: 251px;
+    height: auto;
+  }
+  &__copyLight {
+    font-family: 'Viga';
+    font-size: 1.2rem;
+    color: #999;
+  }
+
+}
