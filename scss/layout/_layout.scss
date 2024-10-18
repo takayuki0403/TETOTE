@@ -1,0 +1,11 @@
+@use '../../util/index' as *;
+
+//layout
+.ly-contentWrap {
+  max-width: 956px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include sp {
+    padding: 0 17px;
+  }
+}

@@ -4,29 +4,30 @@
 ============================= */
 .blog {
   background-color: $bgColor;
-  
-  &__wrapper {
-    position: relative;
-    padding-top: 45px;
-    padding-bottom: 80px;
-    @include sp {
-      padding-top: 54px;
-      padding-bottom: 64px;
-    }
-  }
+}
+.blog__wrapper {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 80px;
 
-  &__more {
-    position: absolute;
-    right: 19px;
-    top: 84px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13px;
-    @include sp {
-      position: static;
-      display: block;
-      margin-top: 52px;
-    }
+  @include sp {
+    padding-top: 54px;
+    padding-bottom: 64px;
+  }
+}
+
+.blog__more {
+  position: absolute;
+  right: 19px;
+  top: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  
+  @include sp {
+    position: static;
+    display: block;
+    margin-top: 52px;
   }
 }

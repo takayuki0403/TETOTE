@@ -2,15 +2,7 @@
 @use './variables' as *;
 @use './mixin' as *;
 
-//layout
-.ly-contentWrap {
-  max-width: 956px;
-  margin: 0 auto;
-  overflow: hidden;
-  @include sp {
-    padding: 0 17px;
-  }
-}
+
 
 //headerBtn
 .c-headerBtn {
@@ -20,6 +12,7 @@
   text-align: center;
   color: #fff;
 }
+
 .c-headerBtn--basic {
   background-color: $black;
 }
@@ -40,6 +33,7 @@
   color: $black;
   background-color: #ffffff;
   border: 1px solid $black;
+
   @include sp {
     padding: 23px 96px;
   }
@@ -53,12 +47,14 @@
   }
 }
 
+
 //title
 .c-titleWrap {
   position: relative;
   width: fit-content;
   height: fit-content;
 }
+
 .c-title {
   @include posCenter;
   width: 100%;  

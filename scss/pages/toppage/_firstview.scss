@@ -1,112 +1,121 @@
 @use '../../util/index' as *;
 
-/* toppage
+/* toppage > firstView
 ============================= */
 .firstView {
   width: 100%;
   height: 824px;
   position: relative;
+
   @include sp {
     height: 100vh;
   }
+}
 
-  &__siteTitle {
-    position: absolute;
-    top: 34.8%;
-    left: 4.8%;
-    font-family: 'Viga';
-    font-size: 9.6rem;
+.firstView__siteTitle {
+  position: absolute;
+  top: 34.8%;
+  left: 4.8%;
+  font-family: 'Viga';
+  font-size: 9.6rem;
+  line-height: 1.2;
+  color: #fff;
+
+  @include sp {
+    top: 62.1%;
+    left: 12px;
+    font-size: min(4.8rem, 60px);
+  }
+}
+
+.firstView__subTitle {
+  position: absolute;
+  top: 73%;
+  left: 0;
+  padding: 17px 4.8%;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(-60deg, transparent 30px, $black 0) bottom right;
+
+  @include sp {
+    top: 82.2%;
+    font-size: min(1.2rem, 20px);
+    padding: 9px 24px 9px 12px;
+    background: linear-gradient(-60deg, transparent 20px, $black 0) bottom right;
+  }
+}
+
+.firstView__firstViewImg {
+  width: 100vw;
+  height: 824px;
+  object-fit: cover;
+
+  @include sp {
+    height: 100vh;
+    object-position: 65%;
+  }
+}
+
+.firstView__news {
+  @include posCenterX;
+  bottom: 38px;
+  display: flex;
+  align-items: center;
+  width: 87.7%;
+  background-color: #fff;
+  border: 1px solid $black;
+  border-radius: 50px;
+
+  @include sp {
+    bottom: 10px;
+    width: calc(100% - 24px);
     line-height: 1.2;
-    color: #fff;
-    @include sp {
-      top: 62.1%;
-      left: 12px;
-      font-size: min(4.8rem, 60px);
-    }
+  }
+}
+.firstView__newsHead {
+  padding: 19px 60px;
+  font-family: 'Viga';
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #fff;
+  background-color: $black;
+  border-radius: 50px 0 0 50px;
+  
+  @include sp {
+    padding: 19px 12px;
+    font-size: 1rem;
+    height: 100%;
+  }
+}
+.firstView__newsTitle {
+  flex: 1;
+  font-size: 1.6rem;
+  padding-left: 7.5%;
+  
+  @include sp {
+    font-size: min(1.2rem, 18px);
+    line-height: 1.7;
+    padding: 10px;
+  }
+}
+.firstView__newsMore {
+  @include posCenterY;
+  right: 47px;
+  font-family: 'Viga';
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: right;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    font-weight: 900;
+    padding-left: 6px;
   }
 
-  &__subTitle {
-    position: absolute;
-    top: 73%;
-    left: 0;
-    padding: 17px 4.8%;
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(-60deg, transparent 30px, $black 0) bottom right;
-    @include sp {
-      top: 82.2%;
-      font-size: min(1.2rem, 20px);
-      padding: 9px 24px 9px 12px;
-      background: linear-gradient(-60deg, transparent 20px, $black 0) bottom right;
-    }
-  }
-
-  &__firstViewImg {
-    width: 100vw;
-    height: 824px;
-    object-fit: cover;
-    @include sp {
-      height: 100vh;
-      object-position: 65%;
-    }
-  }
-
-  &__news {
-    @include posCenterX;
-    bottom: 38px;
-    display: flex;
-    align-items: center;
-    width: 87.7%;
-    background-color: #fff;
-    border: 1px solid $black;
-    border-radius: 50px;
-    @include sp {
-      bottom: 10px;
-      width: calc(100% - 24px);
-      line-height: 1.2;
-    }
-  }
-  &__newsHead {
-    padding: 19px 60px;
-    font-family: 'Viga';
-    font-size: 2.4rem;
-    font-weight: normal;
-    color: #fff;
-    background-color: $black;
-    border-radius: 50px 0 0 50px;
-    @include sp {
-      padding: 19px 12px;
-      font-size: 1rem;
-      height: 100%;
-    }
-  }
-  &__newsTitle {
-    flex: 1;
-    font-size: 1.6rem;
-    padding-left: 7.5%;
-    @include sp {
-      font-size: min(1.2rem, 18px);
-      line-height: 1.7;
-      padding: 10px;
-    }
-  }
-  &__newsMore {
-    @include posCenterY;
-    right: 47px;
-    font-family: 'Viga';
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: right;
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      content: '\f105';
-      font-weight: 900;
-      padding-left: 6px;
-    }
-    @include sp {
-      display: none;
-    }
+  @include sp {
+    display: none;
   }
 }
 

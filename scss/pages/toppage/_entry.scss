@@ -10,48 +10,51 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   @include sp {
     height: 250px;
   }
+}
 
-  &__msgBox {
-    position: absolute;
-    left: 50%;
-    bottom: -50%;
-    transform: translate(-50%, -50%);
-    width: 66%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 20px;
-    @include sp {
-      width: calc(100% - 34px);
-      padding-top: 24px;
-      padding-bottom: 29px;
-      transform: translate(-50%, 0);
-    }
+.entry__msgBox {
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  
+  @include sp {
+    width: calc(100% - 34px);
+    padding-top: 24px;
+    padding-bottom: 29px;
+    transform: translate(-50%, 0);
   }
+}
 
-  &__msgText {
-    margin-bottom: 31px;
-    font-weight: bold;
-    line-height: 1.5;
-    @include sp {
-      padding: 24px 24px 0 24px;
-      font-size: 1.4rem;
-      line-height: 2.5;
-    }
+.entry__msgText {
+  margin-bottom: 31px;
+  font-weight: bold;
+  line-height: 1.5;
+  
+  @include sp {
+    padding: 24px 24px 0 24px;
+    font-size: 1.4rem;
+    line-height: 2.5;
   }
+}
 
-  &__btn {
-    width: 58%;
-    padding: 27px 0;
-    background-color: $subColor;
-    border: none;
-    @include sp {
-      padding: 20px 0;
-
-    }
+.entry__btn {
+  width: 58%;
+  padding: 27px 0;
+  background-color: $subColor;
+  border: none;
+  
+  @include sp {
+    padding: 20px 0;
   }
 }

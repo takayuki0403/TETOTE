@@ -2,26 +2,26 @@
 
 /* member
 ============================= */
-.member {
-  
-  &__container {
-    position: relative;
-    margin-top: 121px;
-    padding-bottom: 63px;
-    @include sp {
-      padding-bottom: 72px;
-    }
-  }
+.member__container {
+  position: relative;
+  margin-top: 121px;
+  padding-bottom: 63px;
 
-  &__memberList {
-    margin-top: 52px;
+  @include sp {
+    padding-bottom: 72px;
   }
-  &__ArrowWrap {
-    position: absolute;
-    right: 0;
-    bottom: 74px;
-    @include sp {
-      display: none;
-    }
+}
+
+.member__memberList {
+  margin-top: 52px;
+}
+
+.member__ArrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 74px;
+
+  @include sp {
+    display: none;
   }
 }

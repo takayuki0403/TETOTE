@@ -8,64 +8,65 @@
   padding-top: 198px;
   padding-bottom: 61px;
   background-color: $bgColor;
-  &.footer {
+  @include sp {
     padding-top: 169px;
     padding-bottom: 24px;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    @include sp {
-      flex-direction: column;
-    }
-  }
-
-  &__rightWrapper {
-    display: flex;
+.footer__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @include sp {
     flex-direction: column;
-    justify-content: space-between;
-    gap: 61px;
-    width: 61.5%;
   }
+}
 
-  &__nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-    padding-top: 25px;
-    padding-right: calc(31px - 22px);
-  }
-  &__navLink {
-    font-weight: bold;
-  }
+.footer__rightWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 61px;
+  width: 61.5%;
+}
 
-  &__snsList {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1em;
-  }
-  &__snsLogo {
-    display: inline-block;
-    font-size: 2.4rem;
-    color: #484848;
-  }
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding-top: 25px;
+  padding-right: calc(31px - 22px);
+}
 
-  &__leftWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  &__siteLogo {
-    width: 251px;
-    height: auto;
-  }
-  &__copyLight {
-    font-family: 'Viga';
-    font-size: 1.2rem;
-    color: #999;
-  }
 
+.footer__navLink {
+  font-weight: bold;
+}
+
+.footer__snsList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+.footer__snsLogo {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #484848;
+}
+
+.footer__leftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__siteLogo {
+  width: 251px;
+  height: auto;
+}
+.footer__copyLight {
+  font-family: 'Viga';
+  font-size: 1.2rem;
+  color: #999;
 }
