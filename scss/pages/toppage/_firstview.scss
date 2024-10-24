@@ -87,6 +87,10 @@
     font-size: 1rem;
     height: 100%;
   }
+
+  @media (max-width: 565px) {
+    padding: 32px 12px;
+  }
 }
 .firstView__newsTitle {
   flex: 1;

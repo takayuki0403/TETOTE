@@ -12,7 +12,6 @@
   text-align: center;
   color: #fff;
 }
-
 .c-headerBtn--basic {
   background-color: $black;
 }
@@ -20,8 +19,8 @@
   background-color: $subColor;
 }
 
-//btn
-.c-btn {
+//btn with chevron
+.c-btnChevron {
   position: relative;
   display: block;
   width: fit-content;
@@ -61,15 +60,18 @@
   font-size: 5.2rem;
   font-weight: bold;
   z-index: 1;
+
   @include sp {
     font-size: 3.2rem;
     left: 0;
     transform: translate(0, -50%);
   }
-  > span {
-    border-bottom: 1px solid $black; 
-  }
 }
+
+.c-title span {
+  border-bottom: 1px solid $black; 
+}
+
 .c-subTitle {
   display: block;
   font-family: 'Poppins';
@@ -77,14 +79,17 @@
   font-size: 13.6rem;
   text-transform: uppercase;
   color: rgba(151, 151, 151, .1);
+
   @include sp {
     font-size: 8rem;
   }
 }
+
 .c-sectionRead {
   margin-top: 10px;
   font-size: 1.6rem;
   line-height: 1.5;
+
   @include sp {
     margin-top: 19px;
   }
@@ -96,35 +101,41 @@
   gap: 20px;
   width: fit-content;
 }
+
 .c-arrow {
   display: inline-block;
   padding: 21px;
   background-color: #fff;
   border: 1px solid $black;
   border-radius: 50%;
+
   @include sp {
     padding: 13px;
   }
-
-  &--black {
-    color: #fff;
-    background-color: $black;
-  }
 }
 
+.c-arrow--black {
+  color: #fff;
+  background-color: $black;
+}
+
+
 //memberList
-.memberList {
+.c-memberList {
   display: flex;
   gap: 43px;
   margin-bottom: 80px;
+
   @include sp {
     gap: 23px;
     margin-bottom: 64px;
   }
+}
 
-&__item {
+.c-memberList__item {
   position: relative;
   width: 300px;
+
   @include sp {
     width: 246px;
   }
@@ -135,13 +146,15 @@
     }
   }
 }
-&__list img {
+
+.c-memberList__list img {
   margin-bottom: 34px;
   @include sp {
     width: 246px;
   }
 }
-&__msgWrap {
+
+.c-memberList__msgWrap {
   position: absolute;
   left: 0;
   top: 331px;
@@ -150,7 +163,8 @@
     top: 261px;
   }
 }
-&__msg {
+
+.c-memberList__msg {
   display: inline-block;
   margin-bottom: 6px;
   padding: 5px 7px;
@@ -162,29 +176,33 @@
     font-size: 16px;
   }
 }
-&__carrerWrap {
+
+.c-memberList__carrerWrap {
   display: flex;
   gap: 9px;
   font-weight: bold;
+  margin-top: 34px;
   margin-bottom: 1em;
   @include sp {
     margin-bottom: 14px;
   }
 }
-&__carrerWrap > p {
+
+.c-memberList__carrerWrap > p {
   font-weight: bold;
   @include sp {
     font-size: 12px;
   }
 }
-&__name {
+
+.c-memberList__name {
   font-size: 24px;
   font-weight: bold;
   @include sp {
     font-size: 20px;
   }
 }
-}
+
 
 //card
 .card {
@@ -196,72 +214,72 @@
   max-width: 950px;
   margin: 0 auto;
   margin-top: 61px;
+}
 
-  &__list {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-    width: 47%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    @include sp {
-      width: 100%;
-    }
+.card__list {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  width: 47%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include sp {
+    width: 100%;
   }
+}
 
-  &__img {
-    width: 156px;
-    height: 182px;
-    @include sp {
-      width: 121px;
-      height: 121px;
-    }
+.card__img {
+  width: 156px;
+  height: 182px;
+  @include sp {
+    width: 121px;
+    height: 121px;
   }
+}
 
-  &__img img {
-    width: 156px;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    @include sp {
-      width: 100%;
-    }
+.card__img img {
+  width: 156px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  @include sp {
+    width: 100%;
   }
+}
 
-  &__body {
-    position: relative;
-    padding: 20px 23px;
-    @include sp {
-      flex: 1;
-      padding: 8px 7px 5px 18px;
-    }
+.card__body {
+  position: relative;
+  padding: 20px 23px;
+  @include sp {
+    flex: 1;
+    padding: 8px 7px 5px 18px;
   }
+}
 
-  &__category {
-    font-size: 1.2rem;
-  }
+.card__category {
+  font-size: 1.2rem;
+}
 
-  &__title {
-    margin-top: 23px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.5;
-    text-decoration: underline;
-    @include sp {
-      font-size: 1.4rem;
-    }
+.card__title {
+  margin-top: 23px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: underline;
+  @include sp {
+    font-size: 1.4rem;
   }
+}
 
-  &__date {
-    position: absolute;
-    left: 23px;
-    bottom: 20px;
-    margin-top: auto;
-    font-size: 1.2rem;
-    @include sp {
-      left: 18px;
-      bottom: 5px;
-    }
+.card__date {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+  margin-top: auto;
+  font-size: 1.2rem;
+  @include sp {
+    left: 18px;
+    bottom: 5px;
   }
-};
+}
