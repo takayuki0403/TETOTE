@@ -3,7 +3,7 @@
 /* menu
 ============================= */
 .menu {
-  display: none;
+  // display: none;
 
   position: fixed;
   top: 0;
@@ -23,6 +23,10 @@
 
 .menu__logo {
   width: 251px;
+
+  @include sp {
+    display: none;
+  }
 }
 
 .menu img {
@@ -34,10 +38,17 @@
   width: 1px;
   height: 100%;
   background-color: $subColor;
+
+  @include sp {
+    display: none;
+  }
 }
 
 .menu__navBtnWrapper {
   max-height: 100%;
+  @include sp {
+    width: 100%;
+  }
 }
 
 .menu__navList {
@@ -47,6 +58,10 @@
   column-gap: 30px;
   max-height: 315px;
   margin-bottom: 50px;
+
+  @include sp {
+    flex-wrap: nowrap;
+  }
 }
 
 .menu__navItem {
