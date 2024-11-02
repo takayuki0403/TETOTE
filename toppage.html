@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/splide-core.min.css">
   <script src="https://kit.fontawesome.com/6f9cf09e6e.js" crossorigin="anonymous"></script>
 
   <meta property="og:site_name" content="採用特設サイト | 株式会社TETOTE">
@@ -88,22 +89,19 @@
       </div>
     </section><!-- /.firstView -->
 
-    <section class="slickArea">
-      <ul class="slickArea__slickList">
-        <li class="slickArea__slickItem">
-          <img class="slickArea__slickImg" src="./img/slide01 1.png" alt="スライド画像１">
-        </li>
-        <li class="slickArea__slickItem">
-          <img class="slickArea__slickImg" src="./img/slide02 1.png" alt="スライド画像１">
-        </li>
-        <li class="slickArea__slickItem">
-          <img class="slickArea__slickImg" src="./img/slide03 1.png" alt="スライド画像１">
-        </li>
-      </ul>
-
-      <div class="slickArea__catchcopyWrapper">
-        <p class="slickArea__catchcopy">後悔しないキャリアを作る、</p>
-        <p class="slickArea__catchcopy">それこそが、我々の使命だ</p>
+    <section class="splideArea">
+      <div class="splide splide__catchCopy" aria-label="Splideの基本的なHTML">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide01 1.png" alt="スライド画像1"></div>
+            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide02 1.png" alt="スライド画像2"></div>
+            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide03 1.png" alt="スライド画像3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="splideArea__catchcopyWrapper">
+        <p class="splideArea__catchcopy">後悔しないキャリアを作る、</p>
+        <p class="splideArea__catchcopy">それこそが、我々の使命だ</p>
       </div>
     </section>
 
@@ -134,52 +132,69 @@
           TETOTEの社員がどういった信念を持って働いているのか、<br>
           一日のスケジュールや仕事内容などを紹介します。
         </p>
-        <ul class="member__memberList c-memberList">
-          <li class="member__memberItem c-memberList__item">
-            <img src="./img/syain01 1.png" alt="社員：西村 優">
-            <div class="c-memberList__msgWrap">
-              <p class="c-memberList__msg">「あなたが担当で良かった」</p>
-              <p class="c-memberList__msg">この一言が、最高のやりがい</p>
+
+        <div class="overflow-right__sliderWrap">
+          <div class="splide splide__memberList" aria-label="splideで作るスライダー">
+            <div class="splide__track">
+
+              <ul class="splide__list member__memberList c-memberList">
+                <li class="splide__slide member__memberItem c-memberList__item">
+                  <img src="./img/syain01 1.png" alt="社員：西村 優">
+                  <div class="c-memberList__msgWrap">
+                    <p class="c-memberList__msg">「あなたが担当で良かった」</p>
+                    <p class="c-memberList__msg">この一言が、最高のやりがい</p>
+                  </div>
+                  <div class="c-memberList__carrerWrap">
+                    <p class="c-memberList__job">コンサルタント</p>
+                    <p class="c-memberList__since">2011年入社</p>
+                  </div>
+                  <p class="c-memberList__name">西村 優</p>
+                </li>
+
+                <li class="splide__slide member__memberItem c-memberList__item">
+                  <img src="./img/syain02 1.png" alt="社員：橋本 拓也">
+                  <div class="c-memberList__msgWrap">
+                    <p class="c-memberList__msg">全力で考えぬける環境</p>
+                    <p class="c-memberList__msg">試練の数だけ強くなれました</p>
+                  </div>
+                  <div class="c-memberList__carrerWrap">
+                    <p class="c-memberList__job">コンサルタント</p>
+                    <p class="c-memberList__since">2015年入社</p>
+                  </div>
+                  <p class="c-memberList__name">橋本 拓也</p>
+                </li>
+
+                <li class="splide__slide member__memberItem c-memberList__item">
+                  <img src="./img/syain03 1.png" alt="社員：青木 美月">
+                  <div class="c-memberList__msgWrap">
+                    <p class="c-memberList__msg">お客様も知らない課題を</p>
+                    <p class="c-memberList__msg">一緒に探し出す醍醐味</p>
+                  </div>
+                  <div class="c-memberList__carrerWrap">
+                    <p class="c-memberList__job">ソリューション営業</p>
+                    <p class="c-memberList__since">2017年入社</p>
+                  </div>
+                  <p class="c-memberList__name">青木 美月</p>
+                </li>
+
+                <li class="splide__slide member__memberItem c-memberList__item">
+                  <img src="./img/syain03 1.png" alt="社員：青木 美月">
+                  <div class="c-memberList__msgWrap">
+                    <p class="c-memberList__msg">お客様も知らない課題を</p>
+                    <p class="c-memberList__msg">一緒に探し出す醍醐味</p>
+                  </div>
+                  <div class="c-memberList__carrerWrap">
+                    <p class="c-memberList__job">ソリューション営業</p>
+                    <p class="c-memberList__since">2017年入社</p>
+                  </div>
+                  <p class="c-memberList__name">青木 美月</p>
+                </li>
+              </ul>
+
             </div>
-            <div class="c-memberList__carrerWrap">
-              <p class="c-memberList__job">コンサルタント</p>
-              <p class="c-memberList__since">2011年入社</p>
-            </div>
-              <p class="c-memberList__name">西村 優</p>
-          </li>
-          <li class="c-memberList__item">
-            <img src="./img/syain02 1.png" alt="社員：橋本 拓也">
-            <div class="c-memberList__msgWrap">
-              <p class="c-memberList__msg">全力で考えぬける環境</p>
-              <p class="c-memberList__msg">試練の数だけ強くなれました</p>
-            </div>
-            <div class="c-memberList__carrerWrap">
-              <p class="c-memberList__job">コンサルタント</p>
-              <p class="c-memberList__since">2015年入社</p>
-            </div>
-              <p class="c-memberList__name">橋本 拓也</p>
-          </li>
-          <li class="c-memberList__item">
-            <img src="./img/syain03 1.png" alt="社員：青木 美月">
-            <div class="c-memberList__msgWrap">
-              <p class="c-memberList__msg">お客様も知らない課題を</p>
-              <p class="c-memberList__msg">一緒に探し出す醍醐味</p>
-            </div>
-            <div class="c-memberList__carrerWrap">
-              <p class="c-memberList__job">ソリューション営業</p>
-              <p class="c-memberList__since">2017年入社</p>
-            </div>
-              <p class="c-memberList__name">青木 美月</p>
-          </li>
-        </ul>
-        <a href="" class="member__btn c-btnChevron">
-          view more
-        </a>
-        <div class="member__arrowWrap c-arrowWrap">
-          <span class="member__arrowPrev c-arrow c-arrow--prev"><i class="fas fa-arrow-left"></i></span>
-          <span class="memmber__arrowNext c-arrow c-arrow--next"><i class="fas fa-arrow-right"></i></span>
+          </div>
         </div>
-      </div>
+
     </section>
 
     <section class="benefits">
@@ -343,7 +358,8 @@
 
   </footer>
 
-
+  <script src="./js/splide.min.js"></script>
+  <script src="./js/splide-extension-auto-scroll.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

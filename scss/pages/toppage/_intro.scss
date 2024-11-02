@@ -2,40 +2,41 @@
 
 /* toppage > intro -- slick & message
 ============================= */
-.slickArea {
+/* splide--infiniteLoop*/
+.splideArea {
   position: relative;
 }
 
-.slickArea__slickList {
+.splideArea .splide {
   display: flex;
-  gap: 34px;
   margin: 100px auto 0;
   overflow: hidden;
-
   @include sp {
-    gap: 16px;
-    margin-top: 41px;
+    margin: 64px auto 79px;
+  }
+}
+
+.splideArea .splide__slide:nth-child(even) {
+  margin-top: 36px;
+  @include sp {
+    margin-top: 27px;
     text-align: center;
   }
 }
 
-.slickArea__slickItem:nth-child(even) {
-  margin-top: 36px;
-
+.splideArea .splide__slide {
+  max-width: 504px;
   @include sp {
-    margin-top: 27px;
+    max-width: 271px;
   }
 }
 
-.slickArea__slickImg {
-  width: 504px;
-
-  @include sp {
-    width: 271px;
-  }
+.splideArea .splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
-.slickArea__catchcopyWrapper {
+.splideArea__catchcopyWrapper {
   @include posCenterX;
   bottom: 10px;
   display: flex;
@@ -43,14 +44,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
   @include sp {
-    top: 162px;
+    bottom: -57px;
     width: 100%;
   }
 }
 
-.slickArea__catchcopy {
+.splideArea__catchcopy {
   margin-bottom: 7px;
   padding: 7px 11px;
   font-size: 40px;
@@ -59,7 +59,6 @@
   color: $black;
   background-color: #fff;
   text-align: center;
-
   @include sp {
     margin: 0 auto 15px;
     font-size: clamp(20px,6.25vw, 24px);
@@ -73,7 +72,6 @@
   background-image: url(../img/map01.png);
   background-position: center;
   background-repeat: no-repeat;
-
   @include sp {
     background-position: top;
     background-size: contain;

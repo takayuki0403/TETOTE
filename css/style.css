@@ -902,43 +902,47 @@ body {
 
 /* toppage > intro -- slick & message
 ============================= */
-.slickArea {
+/* splide--infiniteLoop*/
+.splideArea {
   position: relative;
 }
 
-.slickArea__slickList {
+.splideArea .splide {
   display: flex;
-  gap: 34px;
   margin: 100px auto 0;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-  .slickArea__slickList {
-    gap: 16px;
-    margin-top: 41px;
+  .splideArea .splide {
+    margin: 64px auto 79px;
+  }
+}
+
+.splideArea .splide__slide:nth-child(even) {
+  margin-top: 36px;
+}
+@media screen and (max-width: 768px) {
+  .splideArea .splide__slide:nth-child(even) {
+    margin-top: 27px;
     text-align: center;
   }
 }
 
-.slickArea__slickItem:nth-child(even) {
-  margin-top: 36px;
+.splideArea .splide__slide {
+  max-width: 504px;
 }
 @media screen and (max-width: 768px) {
-  .slickArea__slickItem:nth-child(even) {
-    margin-top: 27px;
+  .splideArea .splide__slide {
+    max-width: 271px;
   }
 }
 
-.slickArea__slickImg {
-  width: 504px;
-}
-@media screen and (max-width: 768px) {
-  .slickArea__slickImg {
-    width: 271px;
-  }
+.splideArea .splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
-.slickArea__catchcopyWrapper {
+.splideArea__catchcopyWrapper {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -950,13 +954,13 @@ body {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .slickArea__catchcopyWrapper {
-    top: 162px;
+  .splideArea__catchcopyWrapper {
+    bottom: -57px;
     width: 100%;
   }
 }
 
-.slickArea__catchcopy {
+.splideArea__catchcopy {
   margin-bottom: 7px;
   padding: 7px 11px;
   font-size: 40px;
@@ -967,7 +971,7 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .slickArea__catchcopy {
+  .splideArea__catchcopy {
     margin: 0 auto 15px;
     font-size: clamp(20px, 6.25vw, 24px);
     width: fit-content;
@@ -1019,6 +1023,23 @@ body {
   .member__container {
     padding-bottom: 72px;
   }
+}
+
+/* splide__memberList */
+.overflow-right__sliderWrap {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+}
+
+.splide__memberList {
+  margin-top: 52px;
+  overflow-x: visible;
+}
+
+.splide__memberList .splide__track {
+  width: fit-content;
+  overflow: visible;
 }
 
 .member__memberList {

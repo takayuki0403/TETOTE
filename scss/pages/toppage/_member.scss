@@ -6,11 +6,33 @@
   position: relative;
   margin-top: 121px;
   padding-bottom: 63px;
-
   @include sp {
     padding-bottom: 72px;
   }
 }
+
+/* splide__memberList */
+.overflow-right__sliderWrap {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+}
+
+.splide__memberList {
+  margin-top: 52px;
+  overflow-x: visible;
+}
+.splide__memberList .splide__track {
+  width: fit-content;
+  overflow: visible;
+}
+
+
+
+
+
+
+
 
 .member__memberList {
   margin-top: 52px;
