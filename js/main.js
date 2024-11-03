@@ -12,6 +12,21 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
+/* splide__firstView*/
+const splide__firstView_options = {
+  type: 'fade',  
+  autoplay: true,
+  rewind: true,
+  speed: 1000,
+  interval: 5000,
+  arrows: false,
+  pagination: false,
+  drag: false,
+  };
+  const splide__firstView = new Splide(".splide__firstView", splide__firstView_options);
+  splide__firstView.mount();
+
+
 /* splide__catchCopy*/
   const splide__catchCopy_options = {
     type: 'loop',  

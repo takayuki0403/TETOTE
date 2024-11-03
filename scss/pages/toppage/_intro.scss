@@ -11,21 +11,22 @@
   display: flex;
   margin: 100px auto 0;
   overflow: hidden;
+  width: fit-content;
   @include sp {
     margin: 64px auto 79px;
   }
 }
 
-.splideArea .splide__slide:nth-child(even) {
+.splideArea .splide__slide:nth-of-type(even) {
   margin-top: 36px;
   @include sp {
     margin-top: 27px;
-    text-align: center;
   }
 }
 
 .splideArea .splide__slide {
   max-width: 504px;
+  transition: none;
   @include sp {
     max-width: 271px;
   }
