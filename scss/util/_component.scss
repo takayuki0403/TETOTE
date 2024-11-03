@@ -134,11 +134,7 @@
 
 .c-memberList__item {
   position: relative;
-  width: 300px;
 
-  @include sp {
-    width: 246px;
-  }
   &:nth-child(even) {
     margin-top: 36px;
     @include sp {
@@ -147,7 +143,9 @@
   }
 }
 
-.c-memberList__list img {
+.c-memberList__item img {
+  display: inline-block;
+  width: 100%;
   margin-bottom: 34px;
   @include sp {
     width: 246px;

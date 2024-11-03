@@ -38,12 +38,14 @@ menuBtn.addEventListener('click', () => {
   /* splide__memberList*/
   const splide__memberList_options = {
     type: 'slide',
+    arrows: true,
     pagination: false,
     drag: true,
     perMove: 1,
     fixedWidth: 300,
     breakpoints: {
         769: {
+          fixedWidth: 246,
           perPage: 1, 
           gap: 16, 
       },

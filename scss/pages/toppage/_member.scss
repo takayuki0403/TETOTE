@@ -3,47 +3,60 @@
 /* member
 ============================= */
 .member__container {
-  position: relative;
+
   margin-top: 121px;
   padding-bottom: 63px;
+  overflow: visible;
   @include sp {
     padding-bottom: 72px;
   }
 }
 
 /* splide__memberList */
-.overflow-right__sliderWrap {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-left: calc(50vw - 50%);
-}
-
 .splide__memberList {
   margin-top: 52px;
-  overflow-x: visible;
 }
+
 .splide__memberList .splide__track {
-  width: fit-content;
   overflow: visible;
+  @include sp {
+    overflow: hidden;
+  }
 }
 
 
 
-
-
-
-
-
-.member__memberList {
-  margin-top: 52px;
-}
-
-.member__arrowWrap {
+.splide__memberList .splide__arrows {
   position: absolute;
+  bottom: 0;
   right: 0;
-  bottom: 74px;
-
+  margin-bottom: 11px;
   @include sp {
     display: none;
   }
+}
+
+.splide__memberList .splide__arrows svg {
+  display: none;
+}
+
+.splide__memberList .splide__arrow::before {
+  font: var(--fa-font-solid);
+  content: "\f060";
+  display: inline-block;
+  margin-right: 20px;
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  color: $black;
+  border: 1px solid $black;
+  border-radius: 50%;
+}
+.splide__memberList .splide__arrow:nth-of-type(2)::before {
+  transform: rotate(180deg);
+}
+
+
+.member__btnWrap {
+  margin-top: 80px;
 }
