@@ -2,29 +2,24 @@
 
 /* toppage > intro -- slick & message
 ============================= */
-/* splide--infiniteLoop*/
-.splideArea {
+/* swiper--infiniteLoop*/
+.swiperArea {
   position: relative;
 }
 
-.splideArea .splide {
+.swiperArea .swiper {
   display: flex;
   margin: 100px auto 0;
   overflow: hidden;
-  width: fit-content;
+  width: auto;
   @include sp {
     margin: 64px auto 79px;
   }
 }
-
-.splideArea .splide__slide:nth-of-type(even) {
-  margin-top: 36px;
-  @include sp {
-    margin-top: 27px;
-  }
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
-
-.splideArea .splide__slide {
+.swiperArea .swiper-slide {
   max-width: 504px;
   transition: none;
   @include sp {
@@ -32,12 +27,20 @@
   }
 }
 
-.splideArea .splide__slide img {
+.swiperArea .swiper-slide:nth-of-type(even) {
+  margin-top: 36px;
+  @include sp {
+    margin-top: 27px;
+  }
+}
+
+
+.swiperArea .swiper-slide img {
   width: 100%;
   height: auto;
 }
 
-.splideArea__catchcopyWrapper {
+.swiperArea__catchcopyWrapper {
   @include posCenterX;
   bottom: 10px;
   display: flex;
@@ -45,13 +48,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  z-index: 1;
   @include sp {
     bottom: -57px;
     width: 100%;
   }
 }
 
-.splideArea__catchcopy {
+.swiperArea__catchcopy {
   margin-bottom: 7px;
   padding: 7px 11px;
   font-size: 40px;
@@ -66,6 +70,7 @@
     width: fit-content;
   }
 }
+
 
 /* message */
 .msg__readWrapper {

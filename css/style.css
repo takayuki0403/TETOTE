@@ -889,6 +889,7 @@ body {
 
 .firstView__newsBody {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 23px 26px 23px 7%;
   border-radius: 0 50px 50px 0;
@@ -934,48 +935,52 @@ body {
 
 /* toppage > intro -- slick & message
 ============================= */
-/* splide--infiniteLoop*/
-.splideArea {
+/* swiper--infiniteLoop*/
+.swiperArea {
   position: relative;
 }
 
-.splideArea .splide {
+.swiperArea .swiper {
   display: flex;
   margin: 100px auto 0;
   overflow: hidden;
-  width: fit-content;
+  width: auto;
 }
 @media screen and (max-width: 768px) {
-  .splideArea .splide {
+  .swiperArea .swiper {
     margin: 64px auto 79px;
   }
 }
 
-.splideArea .splide__slide:nth-of-type(even) {
-  margin-top: 36px;
-}
-@media screen and (max-width: 768px) {
-  .splideArea .splide__slide:nth-of-type(even) {
-    margin-top: 27px;
-  }
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
-.splideArea .splide__slide {
+.swiperArea .swiper-slide {
   max-width: 504px;
   transition: none;
 }
 @media screen and (max-width: 768px) {
-  .splideArea .splide__slide {
+  .swiperArea .swiper-slide {
     max-width: 271px;
   }
 }
 
-.splideArea .splide__slide img {
+.swiperArea .swiper-slide:nth-of-type(even) {
+  margin-top: 36px;
+}
+@media screen and (max-width: 768px) {
+  .swiperArea .swiper-slide:nth-of-type(even) {
+    margin-top: 27px;
+  }
+}
+
+.swiperArea .swiper-slide img {
   width: 100%;
   height: auto;
 }
 
-.splideArea__catchcopyWrapper {
+.swiperArea__catchcopyWrapper {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -985,15 +990,16 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
-  .splideArea__catchcopyWrapper {
+  .swiperArea__catchcopyWrapper {
     bottom: -57px;
     width: 100%;
   }
 }
 
-.splideArea__catchcopy {
+.swiperArea__catchcopy {
   margin-bottom: 7px;
   padding: 7px 11px;
   font-size: 40px;
@@ -1004,7 +1010,7 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .splideArea__catchcopy {
+  .swiperArea__catchcopy {
     margin: 0 auto 15px;
     font-size: clamp(20px, 6.25vw, 24px);
     width: fit-content;

@@ -27,27 +27,18 @@ const splide__firstView_options = {
   splide__firstView.mount();
 
 
-/* splide__catchCopy*/
-  const splide__catchCopy_options = {
-    type: 'loop',  
-    arrows: false,
-    pagination: false,
-    drag: false,
-    perPage: 2,
-    gap: 34,
-    autoScroll: {
-      speed: 0.5,
-      pauseOnHover: false,
-    },
-      breakpoints: {
-        769: {
-          perPage: 1, // 画面幅768px未満で表示枚数1枚
-          gap: 16, // 画面幅500px未満でスライド間の余白0
-        },
-      },
-    };
-    const splide__catchCopy = new Splide(".splide__catchCopy", splide__catchCopy_options);
-    splide__catchCopy.mount(window.splide.Extensions);
+//swiper -catchCopy -
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  loopedSlides: 2,
+  slidesPerView: "auto",
+  speed: 8000,
+  spaceBetween: 32,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});
 
 
   /* splide__memberList*/

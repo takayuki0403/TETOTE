@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/splide-core.min.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <script src="https://kit.fontawesome.com/6f9cf09e6e.js" crossorigin="anonymous"></script>
 
   <meta property="og:site_name" content="採用特設サイト | 株式会社TETOTE">
@@ -102,19 +104,23 @@
       </div>
     </section><!-- /.firstView -->
 
-    <section class="splideArea">
-      <div class="splide splide__catchCopy" aria-label="Splideの基本的なHTML">
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide01 1.png" alt="スライド画像1"></div>
-            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide02 1.png" alt="スライド画像2"></div>
-            <div class="splide__slide"><img class="slickArea__slickImg" src="./img/slide03 1.png" alt="スライド画像3"></div>
-          </div>
+
+    <section class="swiperArea">
+      <div class="swiper swiper__catchCopy">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide01 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide02 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide03 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide01 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide02 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide03 1.png" alt="スライド画像1"></div>
+          <div class="swiper-slide"><img class="swiperArea__swiperImg" src="./img/slide01 1.png" alt="スライド画像1"></div>
         </div>
       </div>
-      <div class="splideArea__catchcopyWrapper">
-        <p class="splideArea__catchcopy">後悔しないキャリアを作る、</p>
-        <p class="splideArea__catchcopy">それこそが、我々の使命だ</p>
+
+      <div class="swiperArea__catchcopyWrapper">
+        <p class="swiperArea__catchcopy">後悔しないキャリアを作る、</p>
+        <p class="swiperArea__catchcopy">それこそが、我々の使命だ</p>
       </div>
     </section>
 
@@ -225,31 +231,35 @@
         </p>
         <ul class="benefits__itemWrap">
           <li class="benefits__item">
-            <div class="benefits__itemImgBox">
-              <figure class="benefits__itemImg benefits__itemImg--people">
-                <img src="./img/DESIGNED_BY_FREEPIK.png" alt="">
-              </figure>
-              <p class="benefits__itemSubTitle">Traning And Career</p>
-              <a href="" class="benefits__arrow c-arrow c-arrow--black"><i class="fas fa-arrow-right"></i></a>
-            </div>
-            <p class="benefits__itemTitle">研修制度とキャリアパス</p>
-            <p class="benefits__itemDesc">
-              個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。
-            </p>
+            <a href="#" class="benefits__link">
+              <div class="benefits__itemImgBox">
+                <figure class="benefits__itemImg benefits__itemImg--people">
+                  <img src="./img/DESIGNED_BY_FREEPIK.png" alt="">
+                </figure>
+                <p class="benefits__itemSubTitle">Traning And Career</p>
+                <a href="" class="benefits__arrow c-arrow c-arrow--black"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <p class="benefits__itemTitle">研修制度とキャリアパス</p>
+              <p class="benefits__itemDesc">
+                個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。
+              </p>
+            </a>
           </li>
 
           <li class="benefits__item">
-            <div class="benefits__itemImgBox">
-              <figure class="benefits__itemImg benefits__itemImg--house">
-                <img src="./img/welfare 1.svg" alt="">
-              </figure>
-              <p class="benefits__itemSubTitle">employee benefits</p>
-              <a href="" class="benefits__arrow c-arrow c-arrow--black"><i class="fas fa-arrow-right"></i></a>
-            </div>
-            <p class="benefits__itemTitle">福利厚生</p>
-            <p class="benefits__itemDesc">
-              TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。
-            </p>
+            <a href="#" class="benefits__link">
+              <div class="benefits__itemImgBox">
+                <figure class="benefits__itemImg benefits__itemImg--house">
+                  <img src="./img/welfare 1.svg" alt="">
+                </figure>
+                <p class="benefits__itemSubTitle">employee benefits</p>
+                <a href="" class="benefits__arrow c-arrow c-arrow--black"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <p class="benefits__itemTitle">福利厚生</p>
+              <p class="benefits__itemDesc">
+                TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。
+              </p>
+            </a>
           </li>
         </ul>
       </div>
@@ -377,6 +387,7 @@
 
   <script src="./js/splide.min.js"></script>
   <script src="./js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
