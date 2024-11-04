@@ -34,4 +34,10 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   transition: all .3s ease;
+  overflow-x: hidden;
+}
+a:hover {
+  opacity: .6;
+  transition: opacity .2s ease-in-out;
+  cursor: pointer;
 }

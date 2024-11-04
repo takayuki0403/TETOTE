@@ -3,11 +3,15 @@
 /* header
 ============================= */
 .header {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: transparent;
   z-index: 100;
 }
+
+
 
 .header__wrapper {
   display: flex;
@@ -56,6 +60,11 @@
   @include sp {
     width: 32px;
     font-size: 10px;
+  }
+  &:hover {
+    opacity: .6;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
   }
 }
 .header__menu span {
@@ -122,3 +131,45 @@
     }
   }
 }
+
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 1;
+  visibility: visible;
+  animation: slideDown .3s ease-in-out;
+  z-index: 100;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header--sticky .header__wrapper {
+  padding: 26px 30px;
+  @include sp {
+    padding: 0 12px;
+  }
+}
+.header--sticky .header__siteLogo--white {
+  display: none;
+}
+.header--sticky .header__siteLogo--black {
+  opacity: 1;
+}
+
+.header--sticky .header__menu {
+  color: $black;
+}
+.header--sticky .header__menu span {
+  background-color: $black;
+}
+

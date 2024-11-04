@@ -1,3 +1,18 @@
+//header
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.pageYOffset;
+
+  if(scrollY >= 824) {
+    header.classList.add('header--sticky');
+  } else {
+    header.classList.remove('header--sticky');
+  }
+}); 
+
+
+//menu
 const menuBtn = document.getElementById('header__menu');
 const menu = document.querySelector('#menu');
 const header = document.querySelector('#header');

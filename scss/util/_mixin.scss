@@ -21,6 +21,11 @@
   transform: translateY(-50%);
 }
 
+@mixin hoveAmine {
+  opacity: .6;
+  transition: opacity .2s ease-in-out;
+}
+
 // mediaQuery
 $sp: 768px;
 
