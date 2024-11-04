@@ -30,20 +30,52 @@
   text-transform: uppercase;
   font-size: 2rem;
   color: $black;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid $black;
-
+  box-sizing: border-box;
+  z-index: 2;
   @include sp {
     padding: 23px 96px;
   }
-  
+
+  &:hover {
+    color: #fff;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $black;
+    z-index: 1;
+    transition: width .2s 
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
   &::after {
     font-family: "Font Awesome 5 Free";
     content: '\f105';
     font-weight: 900;
     position: absolute;
     right: 20px;
+    z-index: 2;
   }
+}
+
+.c-btnText {
+  position: relative;
+  z-index: 2
+}
+
+.c-btnChevron-text {
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -60,7 +92,6 @@
   font-size: 5.2rem;
   font-weight: bold;
   z-index: 1;
-
   @include sp {
     font-size: 3.2rem;
     left: 0;
@@ -79,7 +110,6 @@
   font-size: 13.6rem;
   text-transform: uppercase;
   color: rgba(151, 151, 151, .1);
-
   @include sp {
     font-size: 8rem;
   }
@@ -89,7 +119,6 @@
   margin-top: 10px;
   font-size: 1.6rem;
   line-height: 1.5;
-
   @include sp {
     margin-top: 19px;
   }
@@ -108,9 +137,14 @@
   background-color: #fff;
   border: 1px solid $black;
   border-radius: 50%;
-
   @include sp {
     padding: 13px;
+  }
+
+  &:hover {
+    background-color: $black;
+    color: #fff;
+    transition: all .3s ease-in-out;
   }
 }
 

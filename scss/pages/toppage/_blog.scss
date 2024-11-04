@@ -24,11 +24,15 @@
   justify-content: center;
   align-items: center;
   gap: 13px;
-  
   @include sp {
     position: static;
     display: block;
     margin-top: 52px;
+  }
+
+  &:hover {
+    transform: translateX(20px);
+    transition: transform .3s ease-in-out;
   }
 }
 

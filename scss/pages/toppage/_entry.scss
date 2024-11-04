@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   @include sp {
     height: 250px;
   }
@@ -27,7 +26,6 @@
   text-align: center;
   background-color: #fff;
   border-radius: 20px;
-  
   @include sp {
     width: calc(100% - 34px);
     padding-top: 24px;
@@ -40,7 +38,6 @@
   margin-bottom: 31px;
   font-weight: bold;
   line-height: 1.5;
-  
   @include sp {
     padding: 0 24px;
     font-size: 1.4rem;
@@ -54,8 +51,19 @@
   padding: 27px 0;
   background-color: $subColor;
   border: none;
-  
   @include sp {
     padding: 20px 0;
+  }
+  
+  &:hover {
+    color: $subColor;
+  }
+  &::before {
+    background-color: $subColor;
+  }
+  &:hover::before {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid $subColor;
   }
 }

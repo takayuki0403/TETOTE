@@ -41,20 +41,41 @@
 }
 
 .splide__memberList .splide__arrow::before {
-  font: var(--fa-font-solid);
-  content: "\f060";
   display: inline-block;
   margin-right: 20px;
   width: 58px;
   height: 58px;
-  line-height: 58px;
-  color: $black;
   border: 1px solid $black;
   border-radius: 50%;
 }
-.splide__memberList .splide__arrow:nth-of-type(2)::before {
-  transform: rotate(180deg);
+.splide__memberList .splide__arrow--prev::before {
+  font: var(--fa-font-solid);
+  content: "\f060";
+  line-height: 58px;
+  color: $black;
 }
+.splide__memberList .splide__arrow--next::before {
+  font: var(--fa-font-solid);
+  content: "\f061";
+  line-height: 58px;
+  color: $black;
+}
+
+.splide__memberList .splide__arrow:hover::before {
+  color: #fff;
+  background-color: $black;
+  transform: scale(1.1);
+  transition: all .2s ease;
+}
+.splide__memberList .splide__arrow--prev:hover {
+  transform: translateX(-10px);
+  transition: all .2s ease;
+}
+.splide__memberList .splide__arrow--next:hover {
+  transform: translateX(10px);
+  transition: all .2s ease;
+}
+
 
 
 .member__btnWrap {
