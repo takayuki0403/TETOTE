@@ -56,8 +56,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 
-
-
   /* splide__memberList*/
   const splide__memberList_options = {
     type: 'slide',
