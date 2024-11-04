@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.swiperContainer {
+  position: relative;
+}
+
 .swiperArea .swiper {
   display: flex;
   margin: 100px auto 0;
@@ -27,7 +31,13 @@
   }
 }
 
-.swiperArea .swiper-slide:nth-of-type(even) {
+.swiperArea .swiper__catchCopy--down {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+
   margin-top: 36px;
   @include sp {
     margin-top: 27px;
@@ -71,6 +81,13 @@
   }
 }
 
+.swiperArea__catchcopy .swiper-wrapper:nth-of-type(4),
+.swiperArea__catchcopy .swiper-wrapper:nth-of-type(6) {
+  margin-top: 36px;
+}
+.swiperArea__catchcopy--down .swiper-wrapper:nth-of-type(4) {
+  margin-top: -36px;
+}
 
 /* message */
 .msg__readWrapper {

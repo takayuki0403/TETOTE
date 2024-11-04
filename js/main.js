@@ -42,10 +42,9 @@ const splide__firstView_options = {
   splide__firstView.mount();
 
 
-//swiper -catchCopy -
+//swiper -catchCopy-
 const swiper = new Swiper(".swiper", {
   loop: true,
-  loopedSlides: 2,
   slidesPerView: "auto",
   speed: 8000,
   spaceBetween: 32,
@@ -53,7 +52,10 @@ const swiper = new Swiper(".swiper", {
     delay: 0,
     disableOnInteraction: false,
   },
+  // loopAdditionalSlides: 6,
 });
+
+
 
 
   /* splide__memberList*/
