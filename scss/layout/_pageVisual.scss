@@ -1,0 +1,51 @@
+@use '../util/index' as *;
+
+/* pageVisual
+============================= */
+.pageVisual {
+  width: 100%;
+  height: 339px;
+  margin-top: 118px;
+  background-size: cover;
+}
+.pageVisual__width {
+  position: relative;
+}
+.pageVisual__pageTitleWrap {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pageVisual__pageTitle {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 10px;
+  font-family: Viga;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.pageVisual__pageSubTitle {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 10px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.pageVisual__pageRead {
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 10px;
+  font-weight: bold;
+  color: $mainColor;
+  background-color: #fff;
+}
+
+
+/* 
+============================= */

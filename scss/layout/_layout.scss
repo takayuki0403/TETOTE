@@ -1,7 +1,7 @@
 @use '../util/index' as *;
 
-//layout
-.ly-contentWrap {
+//contentWidth -toppage-
+.ly-toppageContentWrap {
   max-width: 956px;
   margin: 0 auto;
   overflow: hidden;
@@ -9,4 +9,11 @@
   @include sp {
     padding: 0 17px;
   }
+}
+
+//contentWidth -page-
+.ly-pageContentWrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
 }

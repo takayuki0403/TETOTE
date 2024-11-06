@@ -368,7 +368,7 @@
 h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
   color: #000;
@@ -424,15 +424,21 @@ a:hover {
   cursor: pointer;
 }
 
-.ly-contentWrap {
+.ly-toppageContentWrap {
   max-width: 956px;
   margin: 0 auto;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-  .ly-contentWrap {
+  .ly-toppageContentWrap {
     padding: 0 17px;
   }
+}
+
+.ly-pageContentWrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
 }
 
 /* header
@@ -889,6 +895,56 @@ a:hover {
   background-color: #AFA86F;
 }
 
+/* pageVisual
+============================= */
+.pageVisual {
+  width: 100%;
+  height: 339px;
+  margin-top: 118px;
+  background-size: cover;
+}
+
+.pageVisual__width {
+  position: relative;
+}
+
+.pageVisual__pageTitleWrap {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pageVisual__pageTitle {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 10px;
+  font-family: Viga;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.pageVisual__pageSubTitle {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 10px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.pageVisual__pageRead {
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 10px;
+  font-weight: bold;
+  color: #988C2C;
+  background-color: #fff;
+}
+
+/* 
+============================= */
 /* toppage > firstView
 ============================= */
 .firstView {
@@ -1147,7 +1203,7 @@ a:hover {
 /* message */
 .msg__readWrapper {
   margin-top: 100px;
-  background-image: url(../img/map01.png);
+  background-image: url(../img/toppage/map01.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1627,4 +1683,11 @@ a:hover {
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid #AFA86F;
+}
+
+/* pageVisual-about
+============================= */
+.about .pageVisual {
+  background-image: url(../img/about/about-fv.jpg);
+  background-position: 0 50%;
 }/*# sourceMappingURL=style.css.map */

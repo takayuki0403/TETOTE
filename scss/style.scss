@@ -7,7 +7,9 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/menu';
+@use 'layout/pageVisual';
 
+//toppage
 @use 'pages/toppage/firstview';
 @use 'pages/toppage/intro';
 @use 'pages/toppage/member';
@@ -15,4 +17,7 @@
 @use 'pages/toppage/blog';
 @use 'pages/toppage/recruit';
 @use 'pages/toppage/entry';
+
+
+@use 'pages/about/pageVisual-about';
 
