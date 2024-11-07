@@ -1,0 +1,64 @@
+@use '../../util/index' as *;
+
+/* service
+============================= */
+.service__wrapper {
+  padding-top: 55.5px;
+  padding-bottom: 76.5px;
+}
+.service__title {
+  text-align: left;
+}
+
+.service__sectionRead {
+  margin-top: 44px;
+}
+
+.service__contentWrap {
+  margin-top: 82px;
+}
+
+.service__item {
+  width: calc(100% + 44px);
+  padding: 40px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+  
+  &:not(:first-child) {
+    border-top: 1px solid $subColor;
+  }
+}
+
+.service__picture {
+  width: 100%;
+}
+
+.service__picture img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.service__textArea {
+  width: 100%;
+  padding-right: 22px;
+}
+
+.service__itemTitle {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: $mainColor;
+}
+
+.service__itemSubtitle {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.service__itemDesc {
+  margin-top: 40px;
+  line-height: 1.5;
+}
