@@ -242,7 +242,6 @@
   }
 }
 
-
 //card
 .card {
   display: flex;
@@ -336,4 +335,15 @@
     left: 18px;
     bottom: 5px;
   }
+}
+
+
+.c-pageSectionTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.c-sectionRead {
+  line-height: 1.5;
 }

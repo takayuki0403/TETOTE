@@ -1,0 +1,46 @@
+@use '../../util/index' as *;
+
+/* topMsg
+============================= */
+.topMsg__wrapper {
+  padding-top: 62.5px;
+  padding-bottom: 55.5px;
+}
+
+.topMsg__contentWrap {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  gap: 17px;
+  margin-top: 109px;
+}
+
+.topMsg__msgArea {
+  width: 100%;
+}
+
+.topMsg__msgTitle {
+  margin-top: 18px;
+  margin-left: -80px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.topMsg__msgWrap {
+  margin-top: 44px;
+}
+
+.topMsg__msg {
+  color: #000;
+  line-height: 2;
+
+  &:not(:last-of-type) {
+    margin-top: 31px;
+  }
+}
+
+.topMsg__topSign {
+  display: inline-block;
+  margin-top: 22px;
+}
