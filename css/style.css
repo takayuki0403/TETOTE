@@ -1873,4 +1873,37 @@ a:hover {
 }
 
 /* companyInfo
-============================= *//*# sourceMappingURL=style.css.map */
+============================= */
+.companyInfo__wrapper {
+  padding-top: 76.5px;
+  padding-bottom: 69.5px;
+}
+
+.companyInfo__dataListWrap {
+  padding-top: 113px;
+  padding-bottom: 69.5px;
+}
+
+.companyInfo__dataList {
+  display: flex;
+  padding: 36px 0;
+  border-bottom: 1px dotted #222;
+}
+
+.companyInfo__listTitle {
+  width: 23.6%;
+}
+
+.companyInfo__listData {
+  flex: 1;
+}
+
+.companyInfo__listData ul {
+  padding-left: 1em;
+}
+
+.companyInfo__listData ul li {
+  list-style: disc;
+  padding-left: 1em;
+  text-indent: -1em;
+}/*# sourceMappingURL=style.css.map */
