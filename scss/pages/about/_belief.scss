@@ -5,10 +5,17 @@
 .belief__wrapper {
   padding-top: 66px;
   padding-bottom: 62.5px;
+  @include sp {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .belief__listWrap {
   margin-top: 86px;
+  @include sp {
+    margin-top: 24px;
+  }
 }
 
 .belief__list {
@@ -22,6 +29,9 @@
   padding: 30px 80px;
   background-color: $bgColor;
   border-radius: 10px;
+  @include sp {
+    padding: 24px;
+  }
 }
 
 .belief__itemTitleNumber {
@@ -36,14 +46,29 @@
   border: 1px solid $black;
   border-radius: 50%;
   box-sizing: border-box;
+  @include sp {
+    position: absolute;
+    left: 2em;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    line-height: 28px;
+  }
 }
 
 .belief__itemTitle {
   font-size: 2rem;
   font-weight: bold;
+  @include sp {
+    padding-left: 2em;
+    line-height: 1.2;
+  }
 }
 
 .belief__itemDesc {
   margin-top: 35px;
   line-height: 1.5;
+  @include sp {
+    margin-top: 16px;
+  }
 }

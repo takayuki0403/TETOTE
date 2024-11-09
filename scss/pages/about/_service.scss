@@ -25,6 +25,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 42px;
+  @include sp {
+    flex-direction: column;
+    padding: 0; //一旦
+    width: 100%;
+  }
   
   &:not(:first-child) {
     border-top: 1px solid $subColor;

@@ -5,14 +5,32 @@
 .topMsg__wrapper {
   padding-top: 62.5px;
   padding-bottom: 55.5px;
+  @include sp {
+    padding-top: 24px;
+  }
 }
 
 .topMsg__contentWrap {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   gap: 17px;
   margin-top: 109px;
+  @include sp {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+}
+
+.topMsg__ceoPhoto {
+  @include sp {
+    width: 100%;
+  }
+}
+
+.topMsg__ceoPhoto img {
+  @include sp {
+    max-width: 100%;
+  }
 }
 
 .topMsg__msgArea {
@@ -25,6 +43,18 @@
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.5;
+  @include sp {
+    margin-top: -6em;
+    margin-left: -12px;
+    font-size: 2.2rem;
+  }
+}
+.topMsg__msgTitle span {
+  display: inline-block;
+  @include sp {
+    margin-top: 8px;
+    background-color: #fff;
+  }
 }
 
 .topMsg__msgWrap {

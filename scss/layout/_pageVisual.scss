@@ -7,15 +7,25 @@
   height: 339px;
   margin-top: 118px;
   background-size: cover;
+  @include sp {
+    height: 180px;
+    margin-top: 66px;
+  }
 }
+
 .pageVisual__width {
   position: relative;
 }
+
 .pageVisual__pageTitleWrap {
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  @include sp  {
+    padding-top: 24px;
+    gap: 12px;
+  }
 }
 
 .pageVisual__pageTitle {
@@ -26,6 +36,9 @@
   font-size: 6.4rem;
   text-transform: uppercase;
   background-color: #fff;
+  @include sp {
+    font-size: 4.2rem;
+  }
 }
 
 .pageVisual__pageSubTitle {
@@ -35,6 +48,9 @@
   font-size: 2.4rem;
   font-weight: bold;
   background-color: #fff;
+  @include sp {
+    font-size: 2.2rem;
+  }
 }
 
 .pageVisual__pageRead {
@@ -44,6 +60,9 @@
   font-weight: bold;
   color: $mainColor;
   background-color: #fff;
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -57,6 +76,9 @@
   display: flex;
   gap: 4px;
   padding: 20px 0;
+  @include sp {
+    padding: 12px 16px;
+  }
 }
 .breadcrumb__link {
   font-size: 14px;
