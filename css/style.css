@@ -1852,7 +1852,7 @@ a:hover {
 ============================= */
 .topMsg__wrapper {
   padding-top: 62.5px;
-  padding-bottom: 55.5px;
+  padding-bottom: 24px;
 }
 @media screen and (max-width: 768px) {
   .topMsg__wrapper {
@@ -1898,9 +1898,10 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .topMsg__msgTitle {
-    margin-top: -6em;
-    margin-left: -12px;
+    margin-top: -7.5em;
+    margin-right: 8px;
     font-size: 2.2rem;
+    text-align: right;
   }
 }
 
@@ -1930,12 +1931,23 @@ a:hover {
   display: inline-block;
   margin-top: 22px;
 }
+@media screen and (max-width: 768px) {
+  .topMsg__topSign {
+    width: 128px;
+  }
+}
 
 /* service
 ============================= */
 .service__wrapper {
   padding-top: 55.5px;
   padding-bottom: 76.5px;
+}
+@media screen and (max-width: 768px) {
+  .service__wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .service__title {
@@ -1945,28 +1957,44 @@ a:hover {
 .service__sectionRead {
   margin-top: 44px;
 }
+@media screen and (max-width: 768px) {
+  .service__sectionRead {
+    margin-top: 24px;
+  }
+}
 
 .service__contentWrap {
   margin-top: 82px;
 }
+@media screen and (max-width: 768px) {
+  .service__contentWrap {
+    margin-top: 32px;
+  }
+}
 
 .service__item {
-  width: calc(100% + 44px);
-  padding: 40px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 42px;
+  width: calc(100% + 44px);
+  padding: 40px 22px;
 }
 @media screen and (max-width: 768px) {
   .service__item {
     flex-direction: column;
-    padding: 0;
+    gap: 24px;
     width: 100%;
+    padding: 0 0 24px 0;
   }
 }
 .service__item:not(:first-child) {
   border-top: 1px solid #AFA86F;
+}
+@media screen and (max-width: 768px) {
+  .service__item:not(:first-child) {
+    padding-top: 24px;
+  }
 }
 
 .service__picture {
@@ -1982,11 +2010,21 @@ a:hover {
   width: 100%;
   padding-right: 22px;
 }
+@media screen and (max-width: 768px) {
+  .service__textArea {
+    padding-right: 0;
+  }
+}
 
 .service__itemTitle {
   font-size: 3.2rem;
   font-weight: bold;
   color: #988C2C;
+}
+@media screen and (max-width: 768px) {
+  .service__itemTitle {
+    font-size: 2.4rem;
+  }
 }
 
 .service__itemSubtitle {
@@ -1995,10 +2033,21 @@ a:hover {
   font-weight: bold;
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  .service__itemSubtitle {
+    margin-top: 8px;
+    font-size: 2rem;
+  }
+}
 
 .service__itemDesc {
   margin-top: 40px;
   line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .service__itemDesc {
+    margin-top: 8px;
+  }
 }
 
 /* companyInfo

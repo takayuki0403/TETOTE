@@ -5,6 +5,10 @@
 .service__wrapper {
   padding-top: 55.5px;
   padding-bottom: 76.5px;
+  @include sp {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .service__title {
   text-align: left;
@@ -12,27 +16,37 @@
 
 .service__sectionRead {
   margin-top: 44px;
+  @include sp {
+    margin-top: 24px;
+  }
 }
 
 .service__contentWrap {
   margin-top: 82px;
+  @include sp {
+    margin-top: 32px;
+  }
 }
 
 .service__item {
-  width: calc(100% + 44px);
-  padding: 40px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 42px;
+  width: calc(100% + 44px);
+  padding: 40px 22px;
   @include sp {
     flex-direction: column;
-    padding: 0; //一旦
+    gap: 24px;
     width: 100%;
+    padding: 0 0 24px 0;
   }
   
   &:not(:first-child) {
     border-top: 1px solid $subColor;
+    @include sp {
+      padding-top: 24px;
+    }
   }
 }
 
@@ -48,12 +62,18 @@
 .service__textArea {
   width: 100%;
   padding-right: 22px;
+  @include sp {
+    padding-right: 0;
+  }
 }
 
 .service__itemTitle {
   font-size: 3.2rem;
   font-weight: bold;
   color: $mainColor;
+  @include sp {
+    font-size: 2.4rem;
+  }
 }
 
 .service__itemSubtitle {
@@ -61,9 +81,16 @@
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.5;
+  @include sp {
+    margin-top: 8px;
+    font-size: 2rem;
+  }
 }
 
 .service__itemDesc {
   margin-top: 40px;
   line-height: 1.5;
+  @include sp {
+    margin-top: 8px;
+  }
 }

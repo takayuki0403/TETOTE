@@ -4,7 +4,7 @@
 ============================= */
 .topMsg__wrapper {
   padding-top: 62.5px;
-  padding-bottom: 55.5px;
+  padding-bottom: 24px;
   @include sp {
     padding-top: 24px;
   }
@@ -44,9 +44,10 @@
   font-weight: bold;
   line-height: 1.5;
   @include sp {
-    margin-top: -6em;
-    margin-left: -12px;
+    margin-top: -7.5em;
+    margin-right: 8px;
     font-size: 2.2rem;
+    text-align: right;
   }
 }
 .topMsg__msgTitle span {
@@ -73,4 +74,7 @@
 .topMsg__topSign {
   display: inline-block;
   margin-top: 22px;
+  @include sp {
+    width: 128px;
+  }
 }
