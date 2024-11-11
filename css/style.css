@@ -1771,8 +1771,8 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .belief__wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1856,7 +1856,8 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .topMsg__wrapper {
-    padding-top: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1945,8 +1946,8 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .service__wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1973,6 +1974,7 @@ a:hover {
 }
 
 .service__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1985,15 +1987,26 @@ a:hover {
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    padding: 0 0 24px 0;
+    padding: 0 0 40px 0;
   }
 }
-.service__item:not(:first-child) {
-  border-top: 1px solid #AFA86F;
+.service__item:not(:last-child) {
+  padding: 0 0 40px 0;
+}
+.service__item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -22px;
+  right: 22px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #AFA86F;
 }
 @media screen and (max-width: 768px) {
-  .service__item:not(:first-child) {
-    padding-top: 24px;
+  .service__item:not(:first-child)::before {
+    display: none;
   }
 }
 
@@ -2056,10 +2069,21 @@ a:hover {
   padding-top: 76.5px;
   padding-bottom: 69.5px;
 }
+@media screen and (max-width: 768px) {
+  .companyInfo__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 .companyInfo__dataListWrap {
   padding-top: 113px;
   padding-bottom: 69.5px;
+}
+@media screen and (max-width: 768px) {
+  .companyInfo__dataListWrap {
+    padding-top: 24px;
+  }
 }
 
 .companyInfo__dataList {
@@ -2067,13 +2091,24 @@ a:hover {
   padding: 36px 0;
   border-bottom: 1px dotted #222;
 }
+@media screen and (max-width: 768px) {
+  .companyInfo__dataList {
+    padding: 16px 0;
+  }
+}
 
 .companyInfo__listTitle {
   width: 23.6%;
 }
+@media screen and (max-width: 768px) {
+  .companyInfo__listTitle {
+    width: 35%;
+  }
+}
 
 .companyInfo__listData {
   flex: 1;
+  line-height: 1.5;
 }
 
 .companyInfo__listData ul {

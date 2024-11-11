@@ -5,25 +5,39 @@
 .companyInfo__wrapper {
   padding-top: 76.5px;
   padding-bottom: 69.5px;
+  @include sp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .companyInfo__dataListWrap {
   padding-top: 113px;
   padding-bottom: 69.5px;
+  @include sp {
+    padding-top: 24px;
+  }
 }
 
 .companyInfo__dataList {
   display: flex;
   padding: 36px 0;
   border-bottom: 1px dotted $black;
+  @include sp {
+    padding: 16px 0;
+  }
 }
 
 .companyInfo__listTitle {
   width: 23.6%;
+  @include sp {
+    width: 35%;
+  }
 }
 
 .companyInfo__listData {
   flex: 1;
+  line-height: 1.5;
 }
 
 .companyInfo__listData ul {
