@@ -5,8 +5,7 @@
 .footer {
   max-width: 1312px;
   margin: 0 auto;
-  padding-top: 198px;
-  padding-bottom: 61px;
+  padding: 198px 34px 24px;
   background-color: $bgColor;
   @include sp {
     padding-top: 169px;

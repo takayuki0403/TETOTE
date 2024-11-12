@@ -14,6 +14,7 @@
 .topMsg__contentWrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 17px;
   margin-top: 109px;
   @include sp {
@@ -23,19 +24,25 @@
 }
 
 .topMsg__ceoPhoto {
+  width: 50%;
   @include sp {
     width: 100%;
   }
 }
 
 .topMsg__ceoPhoto img {
-  @include sp {
-    max-width: 100%;
-  }
+  width: 100%;
+  object-fit: contain;
+  // @include sp {
+  //   max-width: 100%;
+  // }
 }
 
 .topMsg__msgArea {
-  width: 100%;
+  width: 50%;
+  @include sp {
+    max-width: 100%;
+  }
 }
 
 .topMsg__msgTitle {

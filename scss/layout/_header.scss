@@ -34,11 +34,15 @@
 .header__siteLogo--black {
   opacity: 0;
 }
+.header__siteLogo--childPage {
+  opacity: 1;
+}
 
 .header__btnMenuArea {
   display: flex;
   justify-content: center;
 }
+
 
 .header__btnWrapper {
   display: flex;
@@ -67,6 +71,11 @@
     cursor: pointer;
   }
 }
+
+.header__menu--childPage {
+  color: $black;
+}
+
 .header__menu span {
   display: block;
   width: 100%;
@@ -83,6 +92,10 @@
       margin-bottom: 6px;
     }
   }
+}
+
+.header__menu--childPage span {
+  background-color: $black;
 }
 
   /* panel active */

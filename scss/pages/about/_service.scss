@@ -22,10 +22,7 @@
 }
 
 .service__contentWrap {
-  margin-top: 82px;
-  @include sp {
-    margin-top: 32px;
-  }
+  margin-top: 32px;
 }
 
 .service__item {
@@ -35,17 +32,13 @@
   align-items: center;
   gap: 42px;
   width: calc(100% + 44px);
-  padding: 40px 22px;
+  padding: 50px 22px;
   @include sp {
     flex-direction: column;
     gap: 24px;
     width: 100%;
     padding: 0 0 40px 0;
   }
-  &:not(:last-child) {
-    padding: 0 0 40px 0;
-  }
-
 
   &:not(:first-child)::before {
     content: "";
