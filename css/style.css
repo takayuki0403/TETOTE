@@ -364,13 +364,13 @@
 }
 
 .c-pageSectionTitle {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .c-pageSectionTitle {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -408,16 +408,6 @@ html {
   font-size: 62.5%;
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-  html {
-    font-size: 1vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 2.6666666667vw;
-  }
-}
 body {
   font-family: "Noto Sans JP", "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", meiryo, "Noto Serif JP", sans-serif;
   font-weight: 400;
@@ -967,7 +957,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .pageVisual__pageTitle {
-    font-size: 4.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -981,7 +971,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .pageVisual__pageSubTitle {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -995,7 +985,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .pageVisual__pageRead {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -1008,7 +998,8 @@ a:hover {
 
 .breadcrumb__wrapper {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 8px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1773,6 +1764,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .about .pageVisual {
     background-size: 120%;
+    background-position: 0 65%;
   }
 }
 
@@ -1803,6 +1795,11 @@ a:hover {
   flex-direction: column;
   gap: 35px;
 }
+@media screen and (max-width: 768px) {
+  .belief__list {
+    gap: 24px;
+  }
+}
 
 .belief__item {
   width: 100%;
@@ -1816,37 +1813,16 @@ a:hover {
   }
 }
 
-.belief__itemTitleNumber {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  margin-right: 21px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 43px;
-  text-align: center;
-  border: 1px solid #222;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 768px) {
-  .belief__itemTitleNumber {
-    position: absolute;
-    left: 2em;
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-    line-height: 28px;
-  }
-}
-
 .belief__itemTitle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
   font-size: 2rem;
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .belief__itemTitle {
-    padding-left: 2em;
+    font-size: 1.6rem;
     line-height: 1.2;
   }
 }
@@ -1857,6 +1833,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .belief__itemDesc {
+    font-size: 1.4rem;
     margin-top: 16px;
   }
 }
@@ -1890,6 +1867,7 @@ a:hover {
 
 .topMsg__ceoPhoto {
   width: 50%;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .topMsg__ceoPhoto {
@@ -1901,13 +1879,18 @@ a:hover {
   width: 100%;
   object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  .topMsg__ceoPhoto img {
+    max-width: 400px;
+  }
+}
 
 .topMsg__msgArea {
   width: 50%;
 }
 @media screen and (max-width: 768px) {
   .topMsg__msgArea {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1920,6 +1903,9 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .topMsg__msgTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: -7.5em;
     margin-right: 8px;
     font-size: 2.2rem;
@@ -1929,6 +1915,7 @@ a:hover {
 
 .topMsg__msgTitle span {
   display: inline-block;
+  width: fit-content;
 }
 @media screen and (max-width: 768px) {
   .topMsg__msgTitle span {
@@ -2003,7 +1990,10 @@ a:hover {
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    padding: 0 0 40px 0;
+    padding: 0 0 64px 0;
+  }
+  .service__item:last-child {
+    padding-bottom: 0;
   }
 }
 .service__item:not(:first-child)::before {
@@ -2102,7 +2092,7 @@ a:hover {
 .companyInfo__dataList {
   display: flex;
   padding: 36px 0;
-  border-bottom: 1px dotted #222;
+  border-bottom: 1px dashed #222;
 }
 @media screen and (max-width: 768px) {
   .companyInfo__dataList {

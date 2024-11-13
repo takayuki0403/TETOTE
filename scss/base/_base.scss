@@ -15,16 +15,16 @@
   html {
     font-size: 62.5%;
   }
-  @media screen and (max-width: 1023px) and (min-width: 768px) {
-    html {
-      font-size: 1vw;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    html {
-      font-size: calc(10 / 375 * 100vw);
-    }
-  }
+  // @media screen and (max-width: 1023px) and (min-width: 768px) {
+  //   html {
+  //     font-size: 1vw;
+  //   }
+  // }
+  // @media screen and (max-width: 767px) {
+  //   html {
+  //     font-size: calc(10 / 375 * 100vw);
+  //   }
+  // }
 
 body {
   font-family: 'Noto Sans JP', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', meiryo, 'Noto Serif JP', sans-serif;

@@ -22,7 +22,7 @@
 .companyInfo__dataList {
   display: flex;
   padding: 36px 0;
-  border-bottom: 1px dotted $black;
+  border-bottom: 1px dashed $black;
   @include sp {
     padding: 16px 0;
   }

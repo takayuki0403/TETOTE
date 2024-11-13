@@ -25,6 +25,7 @@
 
 .topMsg__ceoPhoto {
   width: 50%;
+  text-align: center;
   @include sp {
     width: 100%;
   }
@@ -33,15 +34,15 @@
 .topMsg__ceoPhoto img {
   width: 100%;
   object-fit: contain;
-  // @include sp {
-  //   max-width: 100%;
-  // }
+  @include sp {
+    max-width: 400px;
+  }
 }
 
 .topMsg__msgArea {
   width: 50%;
   @include sp {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -52,6 +53,9 @@
   font-weight: bold;
   line-height: 1.5;
   @include sp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: -7.5em;
     margin-right: 8px;
     font-size: 2.2rem;
@@ -60,6 +64,7 @@
 }
 .topMsg__msgTitle span {
   display: inline-block;
+  width: fit-content;
   @include sp {
     margin-top: 8px;
     background-color: #fff;
