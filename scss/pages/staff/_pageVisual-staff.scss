@@ -1,0 +1,12 @@
+@use '../../util/index' as *;
+
+/* pageVisual-about
+============================= */
+.staff .pageVisual {
+  background-image: url(../img/staff/staff-fv.jpg);
+  background-position: 0 50%;
+  @include sp {
+    background-size: 120%;
+    background-position: 0 65%;
+  }
+}

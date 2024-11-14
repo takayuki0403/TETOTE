@@ -1,0 +1,16 @@
+@use '../../util/index' as *;
+
+/* memberList
+============================= */
+.staff {
+
+  .member__memberList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 43px;
+    row-gap: 48px;
+  }
+
+
+
+}
