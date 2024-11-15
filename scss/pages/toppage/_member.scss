@@ -3,7 +3,6 @@
 /* member
 ============================= */
 .member__container {
-
   margin-top: 121px;
   padding-bottom: 63px;
   overflow: visible;
@@ -12,6 +11,16 @@
   }
 }
 
+.toppage {
+  .c-memberList__item:nth-child(even) {
+    margin-top: 36px;
+    @include sp {
+      margin-top: 25px;
+    }
+  }
+}
+
+
 /* splide__memberList */
 .splide__memberList {
   margin-top: 52px;
@@ -19,8 +28,11 @@
 
 .splide__memberList .splide__track {
   overflow: visible;
+  padding-bottom: 170px;
+
   @include sp {
     overflow: hidden;
+    padding-bottom: 141px;
   }
 }
 
@@ -74,10 +86,4 @@
 .splide__memberList .splide__arrow--next:hover {
   transform: translateX(10px);
   transition: all .2s ease;
-}
-
-
-
-.member__btnWrap {
-  margin-top: 80px;
 }

@@ -167,25 +167,15 @@
 .c-memberList {
   display: flex;
   gap: 43px;
-  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   .c-memberList {
     gap: 23px;
-    margin-bottom: 64px;
   }
 }
 
 .c-memberList__item {
   position: relative;
-}
-.c-memberList__item:nth-child(even) {
-  margin-top: 36px;
-}
-@media screen and (max-width: 768px) {
-  .c-memberList__item:nth-child(even) {
-    margin-top: 25px;
-  }
 }
 
 .c-memberList__item img {
@@ -228,7 +218,7 @@
   display: flex;
   gap: 9px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: calc(1em - 6px);
   margin-bottom: 1em;
 }
 @media screen and (max-width: 768px) {
@@ -800,6 +790,13 @@ a:hover {
 }
 
 .menu__line {
+  position: relative;
+  width: 1px;
+  height: 410px;
+}
+.menu__line::after {
+  content: "";
+  position: absolute;
   width: 1px;
   height: 100%;
   background-color: #AFA86F;
@@ -824,7 +821,7 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 30px;
-  max-height: 315px;
+  max-height: 316px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -1315,6 +1312,15 @@ a:hover {
   }
 }
 
+.toppage .c-memberList__item:nth-child(even) {
+  margin-top: 36px;
+}
+@media screen and (max-width: 768px) {
+  .toppage .c-memberList__item:nth-child(even) {
+    margin-top: 25px;
+  }
+}
+
 /* splide__memberList */
 .splide__memberList {
   margin-top: 52px;
@@ -1322,10 +1328,12 @@ a:hover {
 
 .splide__memberList .splide__track {
   overflow: visible;
+  padding-bottom: 170px;
 }
 @media screen and (max-width: 768px) {
   .splide__memberList .splide__track {
     overflow: hidden;
+    padding-bottom: 141px;
   }
 }
 
@@ -1383,10 +1391,6 @@ a:hover {
 .splide__memberList .splide__arrow--next:hover {
   transform: translateX(10px);
   transition: all 0.2s ease;
-}
-
-.member__btnWrap {
-  margin-top: 80px;
 }
 
 /* benefits
@@ -2138,9 +2142,14 @@ a:hover {
 
 /* memberList
 ============================= */
+.staff .member {
+  padding: 0 19px;
+}
 .staff .member__memberList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 43px;
-  row-gap: 48px;
+  row-gap: 138px;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */

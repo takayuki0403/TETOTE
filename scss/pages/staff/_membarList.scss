@@ -4,13 +4,16 @@
 ============================= */
 .staff {
 
-  .member__memberList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 43px;
-    row-gap: 48px;
+  .member {
+    padding: 0 19px;
   }
 
-
-
+  .member__memberList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 43px;
+    row-gap: 138px;
+    margin-bottom: 80px;
+  }
 }

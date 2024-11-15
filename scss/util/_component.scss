@@ -165,12 +165,14 @@
 .c-memberList {
   display: flex;
   gap: 43px;
-  margin-bottom: 80px;
 
   @include sp {
     gap: 23px;
-    margin-bottom: 64px;
   }
+}
+
+.c-memberList__item {
+  position: relative;
 }
 
 .c-memberList__item img {
@@ -207,7 +209,7 @@
   display: flex;
   gap: 9px;
   font-weight: bold;
-  margin-top: 1em - 6px;
+  margin-top: calc(1em - 6px);
   margin-bottom: 1em;
   @include sp {
     margin-bottom: 14px;
@@ -228,6 +230,7 @@
     font-size: 20px;
   }
 }
+
 
 //card
 .card {
