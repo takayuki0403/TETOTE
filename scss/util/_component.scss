@@ -233,7 +233,7 @@
 
 
 //card
-.card {
+.c-cardList {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -244,7 +244,7 @@
   margin-top: 61px;
 }
 
-.card__list {
+.c-card {
   display: flex;
   justify-content: flex-start;
   background-color: #fff;
@@ -261,7 +261,7 @@
   }
 }
 
-.card__link {
+.c-card__link {
   display: flex;
   justify-content: flex-start;
   cursor: pointer;
@@ -271,7 +271,7 @@
 }
 
 
-.card__img {
+.c-card__img {
   width: 156px;
   height: 182px;
   @include sp {
@@ -280,7 +280,7 @@
   }
 }
 
-.card__img img {
+.c-card__img img {
   width: 156px;
   height: 100%;
   object-fit: cover;
@@ -291,7 +291,7 @@
   }
 }
 
-.card__body {
+.c-card__body {
   position: relative;
   padding: 20px 23px;
   @include sp {
@@ -300,11 +300,11 @@
   }
 }
 
-.card__category {
+.c-card__category {
   font-size: 1.2rem;
 }
 
-.card__title {
+.c-card__title {
   margin-top: 23px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -327,6 +327,32 @@
   }
 }
 
+
+//pager
+.c-pager {
+  margin: 0 auto;
+}
+.c-pager__list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.c-pager__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  font-size: 1.4rem;
+  color: $black;
+  background: #fff;
+  border: 1px solid $black;
+  border-radius: 50%;
+}
+.c-pager__item.active {
+  color: #fff;
+  background-color: $black;
+}
 
 .c-pageSectionTitle {
   font-size: 3.2rem;

@@ -1,0 +1,19 @@
+@use '../../util/index' as *;
+
+/* blogList
+============================= */
+.blogList__container {
+  padding-top: 69px;
+  padding-bottom: 139px
+}
+
+.blogIndex {
+
+  .c-cardList {
+    margin-bottom: 98px;
+  }
+  
+  .c-card {
+    background-color: $bgColor;
+  }
+}
