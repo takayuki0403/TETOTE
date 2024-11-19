@@ -248,7 +248,7 @@
   display: flex;
   justify-content: flex-start;
   background-color: #fff;
-  width: 47%;
+  width: 46%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   @include sp {
@@ -315,7 +315,7 @@
   }
 }
 
-.card__date {
+.c-card__date {
   position: absolute;
   left: 23px;
   bottom: 20px;

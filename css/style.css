@@ -261,7 +261,7 @@
   display: flex;
   justify-content: flex-start;
   background-color: #fff;
-  width: 47%;
+  width: 46%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -337,7 +337,7 @@
   }
 }
 
-.card__date {
+.c-card__date {
   position: absolute;
   left: 23px;
   bottom: 20px;
@@ -345,7 +345,7 @@
   font-size: 1.2rem;
 }
 @media screen and (max-width: 768px) {
-  .card__date {
+  .c-card__date {
     left: 18px;
     bottom: 5px;
   }
@@ -2201,9 +2201,21 @@ a:hover {
   padding-top: 69px;
   padding-bottom: 139px;
 }
+@media screen and (max-width: 768px) {
+  .blogList__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .blogIndex .c-cardList {
   margin-bottom: 98px;
+}
+@media screen and (max-width: 768px) {
+  .blogIndex .c-cardList {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 .blogIndex .c-card {
   background-color: #FAF7F1;

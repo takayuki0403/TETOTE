@@ -4,13 +4,21 @@
 ============================= */
 .blogList__container {
   padding-top: 69px;
-  padding-bottom: 139px
+  padding-bottom: 139px;
+  @include sp {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .blogIndex {
 
   .c-cardList {
     margin-bottom: 98px;
+    @include sp {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
   }
   
   .c-card {
