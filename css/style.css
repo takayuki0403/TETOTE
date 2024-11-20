@@ -382,12 +382,15 @@
 .c-pageSectionTitle {
   font-size: 3.2rem;
   font-weight: bold;
-  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .c-pageSectionTitle {
     font-size: 2.2rem;
   }
+}
+
+.c-pageSectionTitle--center {
+  text-align: center;
 }
 
 .c-sectionRead {
@@ -1788,7 +1791,7 @@ a:hover {
 /* pageVisual-about
 ============================= */
 .about .pageVisual {
-  background-image: url(../img/about/about-fv.jpg);
+  background-image: url(../img/pageVisual/about-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
@@ -1989,10 +1992,6 @@ a:hover {
   }
 }
 
-.service__title {
-  text-align: left;
-}
-
 .service__sectionRead {
   margin-top: 44px;
 }
@@ -2158,7 +2157,7 @@ a:hover {
 /* pageVisual-about
 ============================= */
 .staff .pageVisual {
-  background-image: url(../img/staff/staff-fv.jpg);
+  background-image: url(../img/pageVisual-blogIndex/staff-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
@@ -2185,7 +2184,7 @@ a:hover {
 /* pageVisual-blog
 ============================= */
 .blogIndex .pageVisual {
-  background-image: url(../img/blogIndex/blogIndex-fv.jpg);
+  background-image: url(../img/pageVisual/blogIndex-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
@@ -2219,4 +2218,17 @@ a:hover {
 }
 .blogIndex .c-card {
   background-color: #FAF7F1;
+}
+
+/* pageVisual-benefits
+============================= */
+.benefits .pageVisual {
+  background-image: url(../img/pageVisual/benefits-fv.jpg);
+  background-position: 0 50%;
+}
+@media screen and (max-width: 768px) {
+  .benefits .pageVisual {
+    background-size: 120%;
+    background-position: 0 65%;
+  }
 }/*# sourceMappingURL=style.css.map */

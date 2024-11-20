@@ -1,9 +1,9 @@
 @use '../../util/index' as *;
 
-/* pageVisual-blog
+/* pageVisual-benefits
 ============================= */
-.blogIndex .pageVisual {
-  background-image: url(../img/pageVisual/blogIndex-fv.jpg);
+.benefits .pageVisual {
+  background-image: url(../img/pageVisual/benefits-fv.jpg);
   background-position: 0 50%;
   @include sp {
     background-size: 120%;

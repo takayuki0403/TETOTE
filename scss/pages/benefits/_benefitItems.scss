@@ -1,0 +1,21 @@
+@use '../../util/index' as *;
+
+/* benefitItems
+============================= */
+.benefitItems__wrapper {
+  padding-top: 72.5px;
+  padding-bottom: 64px;
+}
+.benefitItems__title {
+  margin-top: 72.5px;
+}
+.benefitItems__defList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefitItems__defTerm {
+  width: 23.5%;
+}
+.benefitItems__defdesc {
+  width: 76.5%;
+}
