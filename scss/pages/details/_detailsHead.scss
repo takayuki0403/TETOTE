@@ -1,0 +1,32 @@
+@use '../../util/index' as *;
+
+/* benefitsHead
+============================= */
+.detailsHead__wrapper {
+  padding-top: 145px;
+  padding-bottom: 53px;
+}
+
+.detailsHead__read {
+  padding-top: 113px;
+}
+
+.detailsHead__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.detailsHead__link {
+  width: 294px;
+  line-height: 2;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;;
+  background-color: $bgColor;
+  border: 1px solid $black;
+  border-radius: 21px;
+}
+.detailsHead__link > i {
+  padding-left: 20px;
+}

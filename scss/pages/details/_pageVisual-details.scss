@@ -1,10 +1,10 @@
 @use '../../util/index' as *;
 
-/* pageVisual-benefits
+/* pageVisual-details
 ============================= */
-.benefitsPage .pageVisual {
-  background-image: url(../img/pageVisual/benefits-fv.jpg);
-  background-position: 0 50%;
+.details .pageVisual {
+  background-image: url(../img/pageVisual/details-fv.jpg);
+  background-position: 0 45%;
   @include sp {
     background-size: 120%;
     background-position: 0 65%;
