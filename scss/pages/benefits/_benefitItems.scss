@@ -9,22 +9,5 @@
 .benefitItems__title {
   margin-top: 72.5px;
 }
-.benefitItems__defList {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-.benefitItems__defTerm {
-  width: 23.5%;
-  padding: 36px 0;
-  border-bottom: 1px dotted $black;
-}
-.benefitItems__defdesc {
-  width: 76%;
-  margin-left: 1px;
-  padding: 36px 0;
-  border-bottom: 1px dotted $black;
-}
-.benefitItems__descItem {
-  line-height: 1.5;
-}
+
+

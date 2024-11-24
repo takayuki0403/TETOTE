@@ -135,6 +135,20 @@
   }
 }
 
+.c-pageSectionTitle {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .c-pageSectionTitle {
+    font-size: 2.2rem;
+  }
+}
+
+.c-pageSectionTitle--center {
+  text-align: center;
+}
+
 .c-arrowWrap {
   display: flex;
   gap: 20px;
@@ -379,21 +393,26 @@
   background-color: #222;
 }
 
-.c-pageSectionTitle {
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-@media screen and (max-width: 768px) {
-  .c-pageSectionTitle {
-    font-size: 2.2rem;
-  }
+.c-defList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.c-pageSectionTitle--center {
-  text-align: center;
+.c-defList__term {
+  width: 23.5%;
+  padding: 36px 0;
+  border-bottom: 1px dotted #222;
 }
 
-.c-sectionRead {
+.c-defList__desc {
+  width: 76%;
+  margin-left: 1px;
+  padding: 36px 0;
+  border-bottom: 1px dotted #222;
+}
+
+.c-defList__descItem {
   line-height: 1.5;
 }
 
@@ -2245,29 +2264,6 @@ a:hover {
   margin-top: 72.5px;
 }
 
-.benefitItems__defList {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.benefitItems__defTerm {
-  width: 23.5%;
-  padding: 36px 0;
-  border-bottom: 1px dotted #222;
-}
-
-.benefitItems__defdesc {
-  width: 76%;
-  margin-left: 1px;
-  padding: 36px 0;
-  border-bottom: 1px dotted #222;
-}
-
-.benefitItems__descItem {
-  line-height: 1.5;
-}
-
 /* benefitVoice
 ============================= */
 .benefitVoice {
@@ -2334,7 +2330,7 @@ a:hover {
 ============================= */
 .detailsHead__wrapper {
   padding-top: 145px;
-  padding-bottom: 53px;
+  padding-bottom: 9px;
 }
 
 .detailsHead__read {
@@ -2360,4 +2356,18 @@ a:hover {
 
 .detailsHead__link > i {
   padding-left: 20px;
+}
+
+/* jobList
+============================= */
+.jobList__inner {
+  margin-bottom: 139px;
+}
+
+.jobList__title {
+  margin-top: 88px;
+}
+
+.jobList__defList {
+  margin-top: 77px;
 }/*# sourceMappingURL=style.css.map */
