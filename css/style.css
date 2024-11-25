@@ -393,6 +393,58 @@
   background-color: #222;
 }
 
+.c-pageHead__wrapper {
+  padding-top: 145px;
+  padding-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  .c-pageHead__wrapper {
+    padding-top: 40px;
+  }
+}
+
+.c-pageHead__title {
+  padding-bottom: 113px;
+}
+@media screen and (max-width: 768px) {
+  .c-pageHead__title {
+    padding-bottom: 24px;
+  }
+}
+
+.c-pageHead__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .c-pageHead__list {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.c-pageHead__link {
+  width: 294px;
+  line-height: 2;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FAF7F1;
+  border: 1px solid #222;
+  border-radius: 21px;
+}
+@media screen and (max-width: 768px) {
+  .c-pageHead__link {
+    width: 100%;
+  }
+}
+
+.c-pageHead__link > i {
+  padding-left: 20px;
+}
+
 .c-defList {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +540,8 @@ a:hover {
 .ly-pageContentWrap {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 @media screen and (max-width: 768px) {
   .ly-pageContentWrap {
@@ -2263,17 +2316,6 @@ a:hover {
   }
 }
 
-/* benefitItems
-============================= */
-.benefitItems__wrapper {
-  padding-top: 72.5px;
-  padding-bottom: 64px;
-}
-
-.benefitItems__title {
-  margin-top: 72.5px;
-}
-
 /* benefitVoice
 ============================= */
 .benefitVoice {
@@ -2336,60 +2378,6 @@ a:hover {
   }
 }
 
-/* benefitsHead
-============================= */
-.detailsHead__wrapper {
-  padding-top: 145px;
-  padding-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  .detailsHead__wrapper {
-    padding-top: 40px;
-  }
-}
-
-.detailsHead__read {
-  padding-top: 113px;
-}
-@media screen and (max-width: 768px) {
-  .detailsHead__read {
-    padding-top: 24px;
-  }
-}
-
-.detailsHead__list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-}
-@media screen and (max-width: 768px) {
-  .detailsHead__list {
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 40px;
-  }
-}
-
-.detailsHead__link {
-  width: 294px;
-  line-height: 2;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: #FAF7F1;
-  border: 1px solid #222;
-  border-radius: 21px;
-}
-@media screen and (max-width: 768px) {
-  .detailsHead__link {
-    width: 100%;
-  }
-}
-
-.detailsHead__link > i {
-  padding-left: 20px;
-}
-
 /* jobList
 ============================= */
 .jobList__inner {
@@ -2417,4 +2405,51 @@ a:hover {
   .jobList__defList {
     margin-top: 24px;
   }
+}
+
+/* pageVisual-carrer
+============================= */
+.career .pageVisual {
+  background-image: url(../img/pageVisual/career-fv.jpg);
+  background-position: 0 50%;
+}
+@media screen and (max-width: 768px) {
+  .career .pageVisual {
+    background-size: 120%;
+    background-position: 0 65%;
+  }
+}
+
+/* careerHead
+============================= */
+.careerHead__wrapper {
+  padding-bottom: 89px;
+}
+
+.careerHead__careerPathImage {
+  margin-top: 48px;
+  margin-bottom: 37px;
+}
+
+/* careerProgram
+============================= */
+.careerProgram__wrapper {
+  padding-bottom: 139px;
+}
+
+.careerProgram__item {
+  margin-bottom: 37px;
+}
+
+.careerProgram__title {
+  padding: 12px 0 12px 21px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-color: #AFA86F;
+  border-radius: 10px;
+}
+
+.careerProgram__desc {
+  margin-top: 50px;
+  line-height: 1.8;
 }/*# sourceMappingURL=style.css.map */

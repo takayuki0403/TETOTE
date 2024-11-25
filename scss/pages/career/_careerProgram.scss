@@ -1,0 +1,22 @@
+@use '../../util/index' as *;
+
+/* careerProgram
+============================= */
+.careerProgram__wrapper {
+  padding-bottom: 139px;
+}
+.careerProgram__item {
+  margin-bottom: 37px;
+}
+.careerProgram__title {
+  padding: 12px 0 12px 21px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-color: $subColor;
+  border-radius: 10px;
+}
+
+.careerProgram__desc {
+  margin-top: 50px;
+  line-height: 1.8;
+}

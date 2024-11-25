@@ -369,6 +369,52 @@
 }
 
 
+//pageHead
+.c-pageHead__wrapper {
+  padding-top: 145px;
+  padding-bottom: 9px;
+  @include sp {
+    padding-top: 40px;
+  }
+}
+.c-pageHead__title {
+  padding-bottom: 113px;
+  @include sp {
+    padding-bottom: 24px;
+  }
+}
+
+
+.c-pageHead__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  @include sp {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+  
+}
+
+.c-pageHead__link {
+  width: 294px;
+  line-height: 2;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;;
+  background-color: $bgColor;
+  border: 1px solid $black;
+  border-radius: 21px;
+  @include sp {
+    width: 100%;
+  }
+}
+.c-pageHead__link > i {
+  padding-left: 20px;
+}
+
+
 //dl,dt,dd
 .c-defList {
   display: flex;

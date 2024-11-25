@@ -15,7 +15,8 @@
 .ly-pageContentWrap {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding-right: 22px;
+  padding-left: 22px;
 
   @include sp {
     min-width: 100%;
