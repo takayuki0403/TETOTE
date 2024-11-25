@@ -5,16 +5,28 @@
 .detailsHead__wrapper {
   padding-top: 145px;
   padding-bottom: 9px;
+  @include sp {
+    padding-top: 40px;
+  }
 }
 
 .detailsHead__read {
   padding-top: 113px;
+  @include sp {
+    padding-top: 24px;
+  }
 }
 
 .detailsHead__list {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  @include sp {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+  
 }
 
 .detailsHead__link {
@@ -26,6 +38,9 @@
   background-color: $bgColor;
   border: 1px solid $black;
   border-radius: 21px;
+  @include sp {
+    width: 100%;
+  }
 }
 .detailsHead__link > i {
   padding-left: 20px;
