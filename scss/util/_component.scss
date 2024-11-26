@@ -369,21 +369,15 @@
 }
 
 
-//pageHead
-.c-pageHead__wrapper {
-  padding-top: 145px;
-  padding-bottom: 9px;
-  @include sp {
-    padding-top: 40px;
-  }
-}
-.c-pageHead__title {
-  padding-bottom: 113px;
-  @include sp {
-    padding-bottom: 24px;
-  }
-}
 
+
+//pageHead
+.c-pageHead__title {
+  margin-bottom: 113px;
+  @include sp {
+    margin-bottom: 24px;
+  }
+}
 
 .c-pageHead__list {
   display: flex;
@@ -420,6 +414,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  margin-top: -30px;
 }
 .c-defList__term {
   width: 23.5%;

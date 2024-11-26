@@ -393,22 +393,12 @@
   background-color: #222;
 }
 
-.c-pageHead__wrapper {
-  padding-top: 145px;
-  padding-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  .c-pageHead__wrapper {
-    padding-top: 40px;
-  }
-}
-
 .c-pageHead__title {
-  padding-bottom: 113px;
+  margin-bottom: 113px;
 }
 @media screen and (max-width: 768px) {
   .c-pageHead__title {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -449,6 +439,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  margin-top: -30px;
 }
 
 .c-defList__term {
@@ -547,6 +538,17 @@ a:hover {
   .ly-pageContentWrap {
     min-width: 100%;
     padding: 0 16px;
+  }
+}
+
+.ly-contentHeight {
+  padding-top: 146px;
+  padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .ly-contentHeight {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -2319,13 +2321,7 @@ a:hover {
 /* benefitVoice
 ============================= */
 .benefitVoice {
-  padding-top: 64px;
-  padding-bottom: 139px;
-}
-@media screen and (max-width: 768px) {
-  .benefitVoice {
-    padding-bottom: 88px;
-  }
+  padding-top: 128px;
 }
 
 .benefitVoice__voiceList {
@@ -2380,15 +2376,6 @@ a:hover {
 
 /* jobList
 ============================= */
-.jobList__inner {
-  margin-bottom: 139px;
-}
-@media screen and (max-width: 768px) {
-  .jobList__inner {
-    margin-bottom: 64px;
-  }
-}
-
 .jobList__title {
   margin-top: 88px;
 }
@@ -2399,7 +2386,7 @@ a:hover {
 }
 
 .jobList__defList {
-  margin-top: 77px;
+  margin-top: 88px;
 }
 @media screen and (max-width: 768px) {
   .jobList__defList {
@@ -2431,12 +2418,12 @@ a:hover {
   margin-bottom: 37px;
 }
 
-/* careerProgram
-============================= */
-.careerProgram__wrapper {
-  padding-bottom: 139px;
+.careerHead__careerPathImage img {
+  max-width: 100%;
 }
 
+/* careerProgram
+============================= */
 .careerProgram__item {
   margin-bottom: 37px;
 }

@@ -2,12 +2,6 @@
 
 /* jobList
 ============================= */
-.jobList__inner {
-  margin-bottom: 139px;
-  @include sp {
-    margin-bottom: 64px;
-  }
-}
 .jobList__title {
   margin-top: 88px;
   @include sp {
@@ -15,7 +9,7 @@
   }
 }
 .jobList__defList {
-  margin-top: 77px;
+  margin-top: 88px;
   @include sp {
     margin-top: 24px;
   }
