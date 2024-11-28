@@ -8,8 +8,8 @@
     margin-top: 64px;
   }
 }
-.jobList__defList {
-  margin-top: 88px;
+.jobList__defList:first-of-type {
+  margin-top: 77px;
   @include sp {
     margin-top: 24px;
   }

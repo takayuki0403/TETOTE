@@ -1,0 +1,51 @@
+@use '../../util/index' as *;
+
+/* staffHead
+============================= */
+.staffHead {
+  background-color: $bgColor;
+}
+.staffHead__inner {
+  padding-top: calc(118px + 43px);
+  padding-bottom: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8.7%;
+}
+
+.staffHead__imgside img {
+  max-width: 286px;
+}
+
+.staffHead__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.staffHead__title span {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.staffHead__staffData {
+  margin-top: 33px;
+}
+.staffHead__job {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $mainColor;
+}
+.staffHead__name {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.staffHead__since {
+  margin-left: 20px;
+}
+.staffHead__desc {
+  margin-top: 13px;
+  line-height: 1.8;
+}

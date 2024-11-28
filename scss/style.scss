@@ -25,10 +25,12 @@
 @use 'pages/about/service';
 @use 'pages/about/companyInfo';
 
-//staff
-@use 'pages/staff/pageVisual-staff';
-@use 'pages/staff/membarList';
+//staffList
+@use 'pages/staffList/pageVisual-staff';
+@use 'pages/staffList/membarList';
 
+//staff
+@use 'pages/staff/staffHead';
 
 //blogList
 @use 'pages/blogIndex/pageVisual-blogIndex';
@@ -46,3 +48,8 @@
 @use 'pages/career/pageVisual-career';
 @use 'pages/career/careerHead';
 @use 'pages/career/careerProgram';
+
+//faq
+@use 'pages/faq/pageVisual-faq';
+@use 'pages/faq/pageHead-faq';
+@use 'pages/faq/faq-accordion';

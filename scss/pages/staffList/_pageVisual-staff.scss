@@ -2,8 +2,8 @@
 
 /* pageVisual-about
 ============================= */
-.staff .pageVisual {
-  background-image: url(../img/pageVisual-blogIndex/staff-fv.jpg);
+.staff-list .pageVisual {
+  background-image: url(../img/pageVisual/staffList-fv.jpg);
   background-position: 0 50%;
   @include sp {
     background-size: 120%;

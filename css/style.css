@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* base
 ============================= */
 /* googleFonts */
@@ -406,6 +407,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  margin-bottom: 97px;
 }
 @media screen and (max-width: 768px) {
   .c-pageHead__list {
@@ -439,13 +441,23 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-top: -30px;
+  padding: 36px 0;
+  border-bottom: 1px solid #AFA86F;
+}
+
+.c-defList:first-of-type {
+  margin-top: 113px;
+  border-top: 1px solid #AFA86F;
+}
+@media screen and (max-width: 768px) {
+  .c-defList:first-of-type {
+    margin-top: 48px;
+  }
 }
 
 .c-defList__term {
   width: 23.5%;
-  padding: 36px 0;
-  border-bottom: 1px dotted #222;
+  color: #222;
 }
 @media screen and (max-width: 768px) {
   .c-defList__term {
@@ -455,9 +467,8 @@
 
 .c-defList__desc {
   width: 76%;
-  margin-left: 1px;
-  padding: 36px 0;
-  border-bottom: 1px dotted #222;
+  line-height: 1.5;
+  color: #222;
 }
 @media screen and (max-width: 768px) {
   .c-defList__desc {
@@ -2241,12 +2252,12 @@ a:hover {
 
 /* pageVisual-about
 ============================= */
-.staff .pageVisual {
-  background-image: url(../img/pageVisual-blogIndex/staff-fv.jpg);
+.staff-list .pageVisual {
+  background-image: url(../img/pageVisual/staffList-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .staff .pageVisual {
+  .staff-list .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2254,16 +2265,73 @@ a:hover {
 
 /* memberList
 ============================= */
-.staff .member {
+.staff-list .member {
   padding: 0 19px;
 }
-.staff .member__memberList {
+.staff-list .member__memberList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 43px;
   row-gap: 138px;
   margin-bottom: 80px;
+}
+
+/* staffHead
+============================= */
+.staffHead {
+  background-color: #FAF7F1;
+}
+
+.staffHead__inner {
+  padding-top: 161px;
+  padding-bottom: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8.7%;
+}
+
+.staffHead__imgside img {
+  max-width: 286px;
+}
+
+.staffHead__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.staffHead__title span {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.staffHead__staffData {
+  margin-top: 33px;
+}
+
+.staffHead__job {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #988C2C;
+}
+
+.staffHead__name {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.staffHead__since {
+  margin-left: 20px;
+}
+
+.staffHead__desc {
+  margin-top: 13px;
+  line-height: 1.8;
 }
 
 /* pageVisual-blog
@@ -2385,11 +2453,11 @@ a:hover {
   }
 }
 
-.jobList__defList {
-  margin-top: 88px;
+.jobList__defList:first-of-type {
+  margin-top: 77px;
 }
 @media screen and (max-width: 768px) {
-  .jobList__defList {
+  .jobList__defList:first-of-type {
     margin-top: 24px;
   }
 }
@@ -2439,4 +2507,76 @@ a:hover {
 .careerProgram__desc {
   margin-top: 50px;
   line-height: 1.8;
+}
+
+/* pagevisual - faq
+============================= */
+.faq .pageVisual {
+  background-image: url(../img/pageVisual/faq-fv.jpg);
+  background-position: 0 60%;
+}
+
+/* pageHead - faq
+============================= */
+.faq .c-pageHead__list {
+  margin-top: 0;
+}
+
+/* faq-accordion
+============================= */
+.faq-accordion__inner {
+  margin-top: 88px;
+}
+
+.faq-accordion__defList {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+@media screen and (max-width: 768px) {
+  .faq-accordion__defList {
+    padding-left: 1.5em;
+    padding-right: 0;
+  }
+}
+
+.faq-accordion__defList:first-child {
+  margin-top: 113px;
+}
+
+.faq-accordion__defTerm {
+  position: relative;
+  width: 100%;
+}
+
+.faq-accordion__defTerm::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "q";
+  left: -1em;
+  font-family: "Viga";
+  font-size: 2.4rem;
+  color: #AFA86F;
+  text-transform: uppercase;
+}
+
+.faq-accordion__defTerm::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "＋";
+  right: 0;
+  font-size: 2.4rem;
+  color: #AFA86F;
+  text-transform: uppercase;
+}
+
+.faq-accordion__defTerm.active::after {
+  content: "";
+}
+
+.faq-accordion__defDesc {
+  position: relative;
+  width: 100%;
+  padding-top: 36px;
 }/*# sourceMappingURL=style.css.map */

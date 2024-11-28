@@ -383,6 +383,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  margin-bottom: 97px;
   @include sp {
     flex-direction: column;
     gap: 16px;
@@ -414,21 +415,28 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-top: -30px;
+  padding: 36px 0;
+  border-bottom: 1px solid $subColor;
+}
+.c-defList:first-of-type {
+  margin-top: 113px;
+  border-top: 1px solid $subColor;
+  @include sp {
+    margin-top: 48px;
+  }
 }
 .c-defList__term {
   width: 23.5%;
-  padding: 36px 0;
-  border-bottom: 1px dotted $black;
+  color: #222;
   @include sp {
     width: 30%;
   }
 }
-.c-defList__desc{
+
+.c-defList__desc {
   width: 76%;
-  margin-left: 1px;
-  padding: 36px 0;
-  border-bottom: 1px dotted $black;
+  line-height: 1.5;
+  color: #222;
   @include sp {
     width: 69.5%;
   }

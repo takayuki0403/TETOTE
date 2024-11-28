@@ -1,0 +1,49 @@
+@use '../../util/index' as *;
+
+/* faq-accordion
+============================= */
+.faq-accordion__inner {
+  margin-top: 88px;
+}
+.faq-accordion__defList {
+  padding-left: 36px;
+  padding-right: 36px;
+  @include sp {
+    padding-left: 1.5em;
+    padding-right: 0;
+  }
+}
+.faq-accordion__defList:first-child {
+  margin-top: 113px;
+}
+.faq-accordion__defTerm {
+  position: relative;
+  width: 100%;
+}
+.faq-accordion__defTerm::before {
+  @include posCenterY;
+  content: "q";
+  left: -1em;
+  font-family: 'Viga';
+  font-size: 2.4rem;
+  color: $subColor;
+  text-transform: uppercase;
+}
+.faq-accordion__defTerm::after {
+  @include posCenterY;
+  content: "＋";
+  right: 0;
+  font-size: 2.4rem;
+  color: $subColor;
+  text-transform: uppercase;
+}
+.faq-accordion__defTerm.active::after {
+  content: ""
+}
+
+
+.faq-accordion__defDesc {
+  position: relative;
+  width: 100%;
+  padding-top: 36px;
+}
