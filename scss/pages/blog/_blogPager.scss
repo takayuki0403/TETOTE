@@ -13,11 +13,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include sp {
+    padding: 16px;
+    gap: 8px;
+  }
 }
 
 .blogPager__link {
   display: block;
   margin-bottom: 6px;
+  @include sp {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 }
 
 .blogPager__date {
@@ -33,6 +41,7 @@
 
 .blogPager__mark {
   position: relative;
+  width: 50%;
 }
 .blogPager__mark--prev::before {
   @include posCenterY;

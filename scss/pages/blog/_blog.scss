@@ -17,6 +17,9 @@
   margin: 0 auto;
   padding: 0 40px;
   background-color: #fff;
+  @include sp {
+    padding: 0 16px;
+  }
 }
 
 .blog__head {
@@ -31,6 +34,10 @@
 .blog__title {
   font-size: 3.2rem;
   font-weight: bold;
+  @include sp {
+    font-size: 2.6rem;
+    line-height: 1.4;
+  }
 }
 
 .blog__topImage {
@@ -51,6 +58,9 @@
   padding-bottom: 50px;
   font-size: 2.4rem;
   font-weight: bold;
+  @include sp {
+    font-size: 2.2rem;
+  }
 }
 
 .blog__articleList {

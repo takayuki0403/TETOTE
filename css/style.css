@@ -2494,6 +2494,11 @@ a:hover {
   padding: 0 40px;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .blog__inner {
+    padding: 0 16px;
+  }
+}
 
 .blog__head {
   padding: 41px 0;
@@ -2507,6 +2512,12 @@ a:hover {
 .blog__title {
   font-size: 3.2rem;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .blog__title {
+    font-size: 2.6rem;
+    line-height: 1.4;
+  }
 }
 
 .blog__topImage {
@@ -2527,6 +2538,11 @@ a:hover {
   padding-bottom: 50px;
   font-size: 2.4rem;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .blog__articleTitle {
+    font-size: 2.2rem;
+  }
 }
 
 .blog__articleList {
@@ -2553,10 +2569,22 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .blogPager__inner {
+    padding: 16px;
+    gap: 8px;
+  }
+}
 
 .blogPager__link {
   display: block;
   margin-bottom: 6px;
+}
+@media screen and (max-width: 768px) {
+  .blogPager__link {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 }
 
 .blogPager__date {
@@ -2572,6 +2600,7 @@ a:hover {
 
 .blogPager__mark {
   position: relative;
+  width: 50%;
 }
 
 .blogPager__mark--prev::before {
