@@ -11,7 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8.7%;
+  gap: 8.3%;
+  @include sp {
+    flex-direction: column-reverse;
+  }
 }
 
 .staffHead__imgside img {
@@ -21,12 +24,19 @@
 .staffHead__title {
   font-size: 2.4rem;
   font-weight: bold;
+  @include sp {
+    font-size: 1.8rem;
+  }
 }
 .staffHead__title span {
   display: block;
   margin-bottom: 24px;
   font-size: 3.6rem;
   font-weight: bold;
+  @include sp {
+    font-size: 2.4rem;
+    margin: 12px 0;
+  }
 }
 .staffHead__staffData {
   margin-top: 33px;

@@ -178,31 +178,36 @@
 //memberList
 .c-memberList {
   display: flex;
+  flex-wrap: wrap;
   gap: 43px;
 
   @include sp {
-    gap: 23px;
+    justify-content: center;
   }
 }
 
 .c-memberList__item {
-  position: relative;
+  width: 100%;
+  max-width: 300px;
+  @include sp {
+    max-width: 246px;
+  }
 }
 
 .c-memberList__item img {
   display: inline-block;
   width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
   @include sp {
     width: 246px;
   }
 }
 
 .c-memberList__staffInfo {
-  position: absolute;
-  left: 0;
-  top: 331px;
+  margin-top: -48px;
   @include sp {
-    top: 261px;
+    // top: 261px;
   }
 }
 

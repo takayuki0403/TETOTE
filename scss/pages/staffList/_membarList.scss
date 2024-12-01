@@ -2,18 +2,23 @@
 
 /* memberList
 ============================= */
-.staff-list {
+.staffList {
 
   .member {
     padding: 0 19px;
   }
-
+  .member__inner {
+    padding-top: 130px;
+    padding-bottom: 139px;
+  }
   .member__memberList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 43px;
     row-gap: 138px;
-    margin-bottom: 80px;
+    @include sp {
+      row-gap: 48px;
+    }
   }
 }

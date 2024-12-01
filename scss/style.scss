@@ -31,6 +31,8 @@
 
 //staff
 @use 'pages/staff/staffHead';
+@use 'pages/staff/staffQA';
+@use 'pages/staff/otherStaff';
 
 //blogList
 @use 'pages/blogIndex/pageVisual-blogIndex';

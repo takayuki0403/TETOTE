@@ -1,0 +1,18 @@
+@use '../../util/index' as *;
+
+/* otherStaff
+============================= */
+.otherStaff__inner {
+  padding-top: 66px;
+  padding-bottom: 139px;
+  @include sp {
+    padding-bottom: 66px;
+  }
+}
+.otherStaff__title {
+  margin-bottom: 50px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
+}

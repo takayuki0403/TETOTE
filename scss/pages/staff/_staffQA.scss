@@ -1,0 +1,49 @@
+@use '../../util/index' as *;
+
+/* staffBody
+============================= */
+.staffQA__inner {
+  padding-top: 101px;
+  padding-bottom: 18px;
+}
+.staffQA__qa {
+  width: 69.3%;
+  margin-bottom: 23px;
+  @include sp {
+    width: 100%;
+  }
+}
+.staffQA__q {
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.staffQA__q::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  height: 1px;
+  width: 100%;
+  background-color: $black;
+  transform: translateX(-1em);
+  @include sp {
+    left: calc(-100% + 20px);
+  }
+}
+.staffQA__a-text {
+  line-height: 1.8;
+  margin-bottom: 23px;
+}
+.staffQA__a-item {
+  margin-bottom: 1em;
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.staffQA__a-list-text {
+  margin-top: 1em;
+  line-height: 1.8;
+}

@@ -181,21 +181,30 @@
 
 .c-memberList {
   display: flex;
+  flex-wrap: wrap;
   gap: 43px;
 }
 @media screen and (max-width: 768px) {
   .c-memberList {
-    gap: 23px;
+    justify-content: center;
   }
 }
 
 .c-memberList__item {
-  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .c-memberList__item {
+    max-width: 246px;
+  }
 }
 
 .c-memberList__item img {
   display: inline-block;
   width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
 }
 @media screen and (max-width: 768px) {
   .c-memberList__item img {
@@ -204,16 +213,8 @@
 }
 
 .c-memberList__staffInfo {
-  position: absolute;
-  left: 0;
-  top: 331px;
+  margin-top: -48px;
 }
-@media screen and (max-width: 768px) {
-  .c-memberList__staffInfo {
-    top: 261px;
-  }
-}
-
 .c-memberList__msg {
   display: inline-block;
   margin-bottom: 6px;
@@ -542,8 +543,8 @@ a:hover {
 .ly-pageContentWrap {
   max-width: 1024px;
   margin: 0 auto;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding-right: 19px;
+  padding-left: 19px;
 }
 @media screen and (max-width: 768px) {
   .ly-pageContentWrap {
@@ -2252,12 +2253,12 @@ a:hover {
 
 /* pageVisual-about
 ============================= */
-.staff-list .pageVisual {
+.staffList .pageVisual {
   background-image: url(../img/pageVisual/staffList-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .staff-list .pageVisual {
+  .staffList .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2265,16 +2266,24 @@ a:hover {
 
 /* memberList
 ============================= */
-.staff-list .member {
+.staffList .member {
   padding: 0 19px;
 }
-.staff-list .member__memberList {
+.staffList .member__inner {
+  padding-top: 130px;
+  padding-bottom: 139px;
+}
+.staffList .member__memberList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 43px;
   row-gap: 138px;
-  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .staffList .member__memberList {
+    row-gap: 48px;
+  }
 }
 
 /* staffHead
@@ -2289,7 +2298,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8.7%;
+  gap: 8.3%;
+}
+@media screen and (max-width: 768px) {
+  .staffHead__inner {
+    flex-direction: column-reverse;
+  }
 }
 
 .staffHead__imgside img {
@@ -2300,12 +2314,23 @@ a:hover {
   font-size: 2.4rem;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .staffHead__title {
+    font-size: 1.8rem;
+  }
+}
 
 .staffHead__title span {
   display: block;
   margin-bottom: 24px;
   font-size: 3.6rem;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .staffHead__title span {
+    font-size: 2.4rem;
+    margin: 12px 0;
+  }
 }
 
 .staffHead__staffData {
@@ -2332,6 +2357,84 @@ a:hover {
 .staffHead__desc {
   margin-top: 13px;
   line-height: 1.8;
+}
+
+/* staffBody
+============================= */
+.staffQA__inner {
+  padding-top: 101px;
+  padding-bottom: 18px;
+}
+
+.staffQA__qa {
+  width: 69.3%;
+  margin-bottom: 23px;
+}
+@media screen and (max-width: 768px) {
+  .staffQA__qa {
+    width: 100%;
+  }
+}
+
+.staffQA__q {
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.staffQA__q::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  height: 1px;
+  width: 100%;
+  background-color: #222;
+  transform: translateX(-1em);
+}
+@media screen and (max-width: 768px) {
+  .staffQA__q::before {
+    left: calc(-100% + 20px);
+  }
+}
+
+.staffQA__a-text {
+  line-height: 1.8;
+  margin-bottom: 23px;
+}
+
+.staffQA__a-item {
+  margin-bottom: 1em;
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.staffQA__a-list-text {
+  margin-top: 1em;
+  line-height: 1.8;
+}
+
+/* otherStaff
+============================= */
+.otherStaff__inner {
+  padding-top: 66px;
+  padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .otherStaff__inner {
+    padding-bottom: 66px;
+  }
+}
+
+.otherStaff__title {
+  margin-bottom: 50px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
 }
 
 /* pageVisual-blog
