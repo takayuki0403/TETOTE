@@ -1,0 +1,44 @@
+@use '../../util/index' as *;
+
+/* blogPager
+============================= */
+.blogPager {
+  background-color: $lightGray;
+}
+
+.blogPager__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 31px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogPager__link {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.blogPager__date {
+  font-size: 12px;
+}
+
+.blogPager__line {
+  display: block;
+  width: 1px;
+  height: 56px;
+  background-color: $black;
+}
+
+.blogPager__mark {
+  position: relative;
+}
+.blogPager__mark--prev::before {
+  @include posCenterY;
+  font-family: font-awesome;
+}
+.blogPage__mark--next::after {
+  @include posCenterY;
+
+}

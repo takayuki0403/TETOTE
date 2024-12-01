@@ -1,0 +1,64 @@
+@use '../../util/index' as *;
+
+/* blog
+============================= */
+.blogPage {
+  margin-top: 118px;
+}
+
+.blog-wrap {
+  padding-top: 34px;
+  padding-bottom: 139px;
+  background-color: $bgColor;
+}
+
+.blog__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: #fff;
+}
+
+.blog__head {
+  padding: 41px 0;
+}
+
+.blog__info {
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
+.blog__title {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.blog__topImage {
+  margin-bottom: 45px;
+}
+
+.blog__topImage img {
+  max-width: 100%;
+}
+
+.blog__articleText {
+  padding-bottom: 23px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.blog__articleTitle {
+  padding-bottom: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.blog__articleList {
+  padding-bottom: 23px;
+  padding-left: 1em;
+}
+.blog__articleItem {
+  list-style: disc;
+  line-height: 1.8;
+}
+

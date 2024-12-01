@@ -1,11 +1,11 @@
 @use '../../util/index' as *;
 
-/* blog
+/* toppage-blog
 ============================= */
-.blog {
+.topBlog {
   background-color: $bgColor;
 }
-.blog__wrapper {
+.topBlog__wrapper {
   position: relative;
   padding-top: 45px;
   padding-bottom: 80px;
@@ -17,7 +17,7 @@
   }
 }
 
-.blog__more {
+.topBlog__more {
   position: absolute;
   right: 19px;
   top: 84px;
@@ -41,7 +41,7 @@
   }
 }
 
-.blog__more a {
+.topBlog__more a {
   display: inline-block;
   margin-left: 13px;
   font-family: 'Viga';
