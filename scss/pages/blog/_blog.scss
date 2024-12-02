@@ -10,6 +10,9 @@
   padding-top: 34px;
   padding-bottom: 139px;
   background-color: $bgColor;
+  @include sp {
+    padding-bottom: 40px;
+  }
 }
 
 .blog__inner {
@@ -17,6 +20,12 @@
   margin: 0 auto;
   padding: 0 40px;
   background-color: #fff;
+  @include sp {
+    padding: 0 16px;
+  }
+}
+
+.blog {
   @include sp {
     padding: 0 16px;
   }

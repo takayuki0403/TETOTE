@@ -1,0 +1,71 @@
+@use '../../util/index' as *;
+
+/* entryPage
+============================= */
+.entryPage__wrap {
+  margin-bottom: 139px;
+  padding: 34px 0 57px;
+  background-color: $bgColor;
+}
+
+.entryPage__content {
+  margin: 0 auto;
+  padding: 58px 71px 81px;
+  background-color: #fff;
+  @include sp {
+    padding: 24px 16px 40px;
+  }
+}
+.entryPage__head {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.entryPage__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.entryPage__subTitle {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+.entryPage__highlight {
+  color: $mainColor;
+  @include sp {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.entryPage__read {
+  margin-top: 51px;
+  padding-bottom: 95px;
+  line-height: 1.5;
+  border-bottom: 1px dotted $mainColor;
+  @include sp {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.entryPage__form {
+  padding-top: 97px;
+}
+
+/* 仮設定 */
+.entryPage__form {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  height: 500px;
+  line-height: 300px;
+  border: 1px solid #aaa;
+  text-align: center;
+  @include sp {
+    margin: 40px auto 0;
+  }
+}

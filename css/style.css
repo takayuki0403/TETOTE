@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
-  color: #000;
+  color: #222;
   line-height: 1;
 }
 
@@ -2487,6 +2487,11 @@ a:hover {
   padding-bottom: 139px;
   background-color: #FAF7F1;
 }
+@media screen and (max-width: 768px) {
+  .blog-wrap {
+    padding-bottom: 40px;
+  }
+}
 
 .blog__inner {
   max-width: 800px;
@@ -2496,6 +2501,12 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .blog__inner {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog {
     padding: 0 16px;
   }
 }
@@ -2822,4 +2833,86 @@ a:hover {
   position: relative;
   width: 100%;
   padding-top: 36px;
+}
+
+/* entryPage
+============================= */
+.entryPage__wrap {
+  margin-bottom: 139px;
+  padding: 34px 0 57px;
+  background-color: #FAF7F1;
+}
+
+.entryPage__content {
+  margin: 0 auto;
+  padding: 58px 71px 81px;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .entryPage__content {
+    padding: 24px 16px 40px;
+  }
+}
+
+.entryPage__head {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.entryPage__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.entryPage__subTitle {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+.entryPage__highlight {
+  color: #988C2C;
+}
+@media screen and (max-width: 768px) {
+  .entryPage__highlight {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.entryPage__read {
+  margin-top: 51px;
+  padding-bottom: 95px;
+  line-height: 1.5;
+  border-bottom: 1px dotted #988C2C;
+}
+@media screen and (max-width: 768px) {
+  .entryPage__read {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.entryPage__form {
+  padding-top: 97px;
+}
+
+/* 仮設定 */
+.entryPage__form {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  height: 500px;
+  line-height: 300px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .entryPage__form {
+    margin: 40px auto 0;
+  }
 }/*# sourceMappingURL=style.css.map */
