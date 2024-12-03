@@ -2,11 +2,17 @@
 
 /* careerProgram
 ============================= */
-.careerProgram__item {
+.careerProgram__wrapper {
+  padding-bottom: 139px;
+  @include sp {
+    padding-bottom: 80px;
+  }
+}
+.careerProgram__item:not(:last-child) {
   margin-bottom: 37px;
 }
 .careerProgram__title {
-  padding: 12px 0 12px 21px;
+  padding: 8px 0 8px 21px;
   font-size: 2.4rem;
   font-weight: bold;
   background-color: $subColor;

@@ -2,6 +2,12 @@
 
 /* faq-accordion
 ============================= */
+.faq-accordion-container {
+  padding-bottom: 139px;
+  @include sp {
+    padding-bottom: 80px;
+  }
+}
 .faq-accordion__inner {
   margin-top: 88px;
 }

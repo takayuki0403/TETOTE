@@ -4,16 +4,15 @@
 ============================= */
 .companyInfo__wrapper {
   padding-top: 76.5px;
-  padding-bottom: 69.5px;
+  padding-bottom: 139px;
   @include sp {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 }
 
 .companyInfo__dataListWrap {
   padding-top: 113px;
-  padding-bottom: 69.5px;
   @include sp {
     padding-top: 24px;
   }

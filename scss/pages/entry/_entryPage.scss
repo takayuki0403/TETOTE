@@ -6,6 +6,9 @@
   margin-bottom: 139px;
   padding: 34px 0 57px;
   background-color: $bgColor;
+  @include sp {
+    margin-bottom: 80px;
+  }
 }
 
 .entryPage__content {

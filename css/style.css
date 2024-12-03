@@ -553,17 +553,6 @@ a:hover {
   }
 }
 
-.ly-contentHeight {
-  padding-top: 146px;
-  padding-bottom: 139px;
-}
-@media screen and (max-width: 768px) {
-  .ly-contentHeight {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
 /* header
 ============================= */
 .header {
@@ -2196,18 +2185,17 @@ a:hover {
 ============================= */
 .companyInfo__wrapper {
   padding-top: 76.5px;
-  padding-bottom: 69.5px;
+  padding-bottom: 139px;
 }
 @media screen and (max-width: 768px) {
   .companyInfo__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 }
 
 .companyInfo__dataListWrap {
   padding-top: 113px;
-  padding-bottom: 69.5px;
 }
 @media screen and (max-width: 768px) {
   .companyInfo__dataListWrap {
@@ -2270,8 +2258,14 @@ a:hover {
   padding: 0 19px;
 }
 .staffList .member__inner {
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .staffList .member__inner {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
 }
 .staffList .member__memberList {
   display: flex;
@@ -2425,7 +2419,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .otherStaff__inner {
-    padding-bottom: 66px;
+    padding-bottom: 80px;
   }
 }
 
@@ -2489,7 +2483,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .blog-wrap {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 }
 
@@ -2640,10 +2634,27 @@ a:hover {
   }
 }
 
+/* benefitItems
+============================= */
+.benefitItems__wrapper {
+  padding-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .benefitItems__wrapper {
+    padding-top: 40px;
+  }
+}
+
 /* benefitVoice
 ============================= */
 .benefitVoice {
   padding-top: 128px;
+}
+@media screen and (max-width: 768px) {
+  .benefitVoice {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .benefitVoice__voiceList {
@@ -2696,8 +2707,28 @@ a:hover {
   }
 }
 
+/* detailsHead
+============================= */
+.detailsHead__wrapper {
+  padding-top: 146px;
+}
+@media screen and (max-width: 768px) {
+  .detailsHead__wrapper {
+    padding-top: 40px;
+  }
+}
+
 /* jobList
 ============================= */
+.jobList__inner {
+  padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .jobList__inner {
+    padding-bottom: 80px;
+  }
+}
+
 .jobList__title {
   margin-top: 88px;
 }
@@ -2732,7 +2763,14 @@ a:hover {
 /* careerHead
 ============================= */
 .careerHead__wrapper {
+  padding-top: 146px;
   padding-bottom: 89px;
+}
+@media screen and (max-width: 768px) {
+  .careerHead__wrapper {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
 }
 
 .careerHead__careerPathImage {
@@ -2746,12 +2784,21 @@ a:hover {
 
 /* careerProgram
 ============================= */
-.careerProgram__item {
+.careerProgram__wrapper {
+  padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .careerProgram__wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+.careerProgram__item:not(:last-child) {
   margin-bottom: 37px;
 }
 
 .careerProgram__title {
-  padding: 12px 0 12px 21px;
+  padding: 8px 0 8px 21px;
   font-size: 2.4rem;
   font-weight: bold;
   background-color: #AFA86F;
@@ -2772,12 +2819,30 @@ a:hover {
 
 /* pageHead - faq
 ============================= */
+.faqHead__wrapper {
+  padding-top: 145px;
+}
+@media screen and (max-width: 768px) {
+  .faqHead__wrapper {
+    padding-top: 40px;
+  }
+}
+
 .faq .c-pageHead__list {
   margin-top: 0;
 }
 
 /* faq-accordion
 ============================= */
+.faq-accordion-container {
+  padding-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .faq-accordion-container {
+    padding-bottom: 80px;
+  }
+}
+
 .faq-accordion__inner {
   margin-top: 88px;
 }
@@ -2841,6 +2906,11 @@ a:hover {
   margin-bottom: 139px;
   padding: 34px 0 57px;
   background-color: #FAF7F1;
+}
+@media screen and (max-width: 768px) {
+  .entryPage__wrap {
+    margin-bottom: 80px;
+  }
 }
 
 .entryPage__content {

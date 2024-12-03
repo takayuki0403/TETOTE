@@ -2,6 +2,12 @@
 
 /* jobList
 ============================= */
+.jobList__inner {
+  padding-bottom: 139px;
+  @include sp {
+    padding-bottom: 80px;
+  }
+}
 .jobList__title {
   margin-top: 88px;
   @include sp {

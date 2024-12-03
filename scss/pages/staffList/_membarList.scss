@@ -8,8 +8,12 @@
     padding: 0 19px;
   }
   .member__inner {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 139px;
+    @include sp {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
   }
   .member__memberList {
     display: flex;

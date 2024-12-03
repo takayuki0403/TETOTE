@@ -44,10 +44,12 @@
 
 //benefits
 @use 'pages/benefits/pageVisual-benefits';
+@use 'pages/benefits/benefitItems';
 @use 'pages/benefits/benefitVoice';
 
 //detail
 @use 'pages/details/pageVisual-details';
+@use 'pages/details/detailsHead';
 @use 'pages/details/jobList';
 
 //carrer

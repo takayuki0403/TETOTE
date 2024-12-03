@@ -3,7 +3,12 @@
 /* careerHead
 ============================= */
 .careerHead__wrapper {
+  padding-top: 146px;
   padding-bottom: 89px;
+  @include sp {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
 }
 .careerHead__careerPathImage {
   margin-top: 48px;
