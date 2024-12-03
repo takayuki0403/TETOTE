@@ -418,20 +418,23 @@
   }
 }
 
-.c-pageHead__link {
+.c-pageHead__item {
   width: 294px;
-  line-height: 2;
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center;
-  background-color: #FAF7F1;
   border: 1px solid #222;
   border-radius: 21px;
+  background-color: #FAF7F1;
 }
 @media screen and (max-width: 768px) {
-  .c-pageHead__link {
+  .c-pageHead__item {
     width: 100%;
   }
+}
+
+.c-pageHead__link {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: bold;
 }
 
 .c-pageHead__link > i {

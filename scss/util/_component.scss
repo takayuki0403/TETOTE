@@ -396,19 +396,20 @@
   }
   
 }
-
-.c-pageHead__link {
+.c-pageHead__item {
   width: 294px;
-  line-height: 2;
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center;;
-  background-color: $bgColor;
   border: 1px solid $black;
   border-radius: 21px;
+  background-color: $bgColor;
   @include sp {
     width: 100%;
   }
+}
+.c-pageHead__link {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: bold;
 }
 .c-pageHead__link > i {
   padding-left: 20px;
