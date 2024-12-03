@@ -1,5 +1,13 @@
 @use '../util/index' as *;
 
+
+.ly-headerPadding {
+  padding-top: 118px;
+  @include sp {
+    padding-top: 66px;
+  }
+}
+
 //contentWidth -toppage-
 .ly-toppageContentWrap {
   max-width: 956px;
@@ -23,13 +31,3 @@
     padding: 0 16px;
   }
 }
-
-// //pagePadding
-// .ly-contentHeight {
-//   padding-top: 146px;
-//   padding-bottom: 139px;
-//   @include sp {
-//     padding-top: 40px;
-//     padding-bottom: 40px;
-//   }
-// }

@@ -1,0 +1,19 @@
+@use '../../util/index' as *;
+
+/* thanks
+============================= */
+.thanksPage__home {
+  height: auto;
+  padding: 58px 0 95px;
+}
+.entryPage__thankMsg {
+  font-size: 3.2rem;
+  font-weight: bold;
+  @include sp {
+    font-size: 2.2rem;
+  }
+}
+.entryPage__descMsg {
+  margin-top: 51px;
+  line-height: 1.5;
+}
