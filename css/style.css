@@ -1040,7 +1040,6 @@ a:hover {
 .pageVisual {
   width: 100%;
   height: 339px;
-  margin-top: 118px;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
@@ -1885,12 +1884,12 @@ a:hover {
 
 /* pageVisual-about
 ============================= */
-.about .pageVisual {
+.aboutPage .pageVisual {
   background-image: url(../img/pageVisual/about-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .about .pageVisual {
+  .aboutPage .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2250,12 +2249,12 @@ a:hover {
 
 /* pageVisual-about
 ============================= */
-.staffList .pageVisual {
+.staffListPage .pageVisual {
   background-image: url(../img/pageVisual/staffList-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .staffList .pageVisual {
+  .staffListPage .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2296,7 +2295,7 @@ a:hover {
 }
 
 .staffHead__inner {
-  padding-top: 161px;
+  padding-top: 43px;
   padding-bottom: 43px;
   display: flex;
   justify-content: space-between;
@@ -2442,12 +2441,12 @@ a:hover {
 
 /* pageVisual-blog
 ============================= */
-.blogIndex .pageVisual {
+.blogIndexPage .pageVisual {
   background-image: url(../img/pageVisual/blogIndex-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .blogIndex .pageVisual {
+  .blogIndexPage .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2705,12 +2704,12 @@ a:hover {
 
 /* pageVisual-details
 ============================= */
-.details .pageVisual {
+.detailsPage .pageVisual {
   background-image: url(../img/pageVisual/details-fv.jpg);
   background-position: 0 45%;
 }
 @media screen and (max-width: 768px) {
-  .details .pageVisual {
+  .detailsPage .pageVisual {
     background-size: 120%;
     background-position: 0 35%;
   }
@@ -2758,12 +2757,12 @@ a:hover {
 
 /* pageVisual-carrer
 ============================= */
-.career .pageVisual {
+.careerPage .pageVisual {
   background-image: url(../img/pageVisual/career-fv.jpg);
   background-position: 0 50%;
 }
 @media screen and (max-width: 768px) {
-  .career .pageVisual {
+  .careerPage .pageVisual {
     background-size: 120%;
     background-position: 0 65%;
   }
@@ -2821,7 +2820,7 @@ a:hover {
 
 /* pagevisual - faq
 ============================= */
-.faq .pageVisual {
+.faqPage .pageVisual {
   background-image: url(../img/pageVisual/faq-fv.jpg);
   background-position: 0 60%;
 }
