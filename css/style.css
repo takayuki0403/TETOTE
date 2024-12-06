@@ -544,6 +544,9 @@ a:hover {
 .ly-toppageContentWrap {
   max-width: 956px;
   margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
@@ -1440,6 +1443,10 @@ a:hover {
   }
 }
 
+.member__memberList {
+  flex-wrap: nowrap;
+}
+
 .toppage .c-memberList__item:nth-child(even) {
   margin-top: 36px;
 }
@@ -1556,7 +1563,7 @@ a:hover {
 
 .benefits__itemWrap {
   display: flex;
-  gap: 94px;
+  gap: 5vw;
   margin-top: 114px;
   overflow: visible;
 }
@@ -1596,8 +1603,10 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 430px;
-  height: 430px;
+  width: 45vw;
+  height: 45vw;
+  max-width: 430px;
+  max-height: 430px;
   background-color: #FAF7F1;
   border-radius: 50%;
   cursor: pointer;
@@ -1641,7 +1650,7 @@ a:hover {
   margin: 0 auto;
   margin-top: -51px;
   padding: 5px 7px;
-  font-size: 3.2rem;
+  font-size: clamp(3rem, 4vw, 3.2rem);
   font-weight: bold;
   background-color: #AFA86F;
 }

@@ -10,7 +10,9 @@
     padding-bottom: 72px;
   }
 }
-
+.member__memberList {
+  flex-wrap: nowrap;
+}
 .toppage {
   .c-memberList__item:nth-child(even) {
     margin-top: 36px;
