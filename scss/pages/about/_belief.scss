@@ -39,7 +39,7 @@
 
 .belief__itemTitle {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5em;
   font-size: 2rem;
   font-weight: bold;
@@ -49,8 +49,27 @@
   }
 }
 
+.belief__itemTitleNumber {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid $black;
+  border-radius: 50%;
+  @include sp {
+    font-size: 1.4rem;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
 .belief__itemDesc {
-  margin-top: 35px;
+  margin-top: 21px;
   line-height: 1.5;
   @include sp {
     font-size: 1.4rem;

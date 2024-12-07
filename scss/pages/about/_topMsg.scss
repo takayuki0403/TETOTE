@@ -58,7 +58,7 @@
     align-items: flex-end;
     margin-top: -7.5em;
     margin-right: 8px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: right;
   }
 }
@@ -80,6 +80,7 @@
   line-height: 2;
 
   &:not(:last-of-type) {
+    line-height: 1.7;
     margin-top: 31px;
   }
 }

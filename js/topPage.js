@@ -23,7 +23,6 @@ const swiper = new Swiper(".swiper", {
     delay: 0,
     disableOnInteraction: false,
   },
-  // loopAdditionalSlides: 6,
 });
 
 
@@ -33,6 +32,7 @@ const splide__memberList_options = {
   arrows: true,
   pagination: false,
   drag: true,
+  start: 0,
   perMove: 1,
   fixedWidth: 300,
   breakpoints: {

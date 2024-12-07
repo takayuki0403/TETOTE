@@ -12,6 +12,7 @@
 }
 .member__memberList {
   flex-wrap: nowrap;
+  justify-content: flex-start
 }
 .toppage {
   .c-memberList__item:nth-child(even) {
