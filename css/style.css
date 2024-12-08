@@ -2304,20 +2304,20 @@ a:hover {
 
 /* memberList
 ============================= */
-.staffList .member {
+.staffListPage .member {
   padding: 0 19px;
 }
-.staffList .member__inner {
+.staffListPage .member__inner {
   padding-top: 100px;
   padding-bottom: 139px;
 }
 @media screen and (max-width: 768px) {
-  .staffList .member__inner {
+  .staffListPage .member__inner {
     padding-top: 40px;
     padding-bottom: 80px;
   }
 }
-.staffList .member__memberList {
+.staffListPage .member__memberList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -2325,7 +2325,7 @@ a:hover {
   row-gap: 138px;
 }
 @media screen and (max-width: 768px) {
-  .staffList .member__memberList {
+  .staffListPage .member__memberList {
     row-gap: 48px;
   }
 }
