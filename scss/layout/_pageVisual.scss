@@ -36,7 +36,7 @@
   text-transform: uppercase;
   background-color: #fff;
   @include sp {
-    font-size: 2.4rem;
+    font-size: clamp(3.2rem, 6vw, 4.2rem);
   }
 }
 
@@ -48,7 +48,7 @@
   font-weight: bold;
   background-color: #fff;
   @include sp {
-    font-size: 1.2rem;
+    font-size: clamp(1.6rem, 3.1vw, 2.4rem);
   }
 }
 
@@ -60,7 +60,7 @@
   color: $mainColor;
   background-color: #fff;
   @include sp {
-    font-size: 0.7rem;
+    font-size: clamp(1.2rem, 1.8vw, 1.4rem);
   }
 }
 
