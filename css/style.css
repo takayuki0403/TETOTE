@@ -681,14 +681,11 @@ a:hover {
   z-index: 100;
 }
 #header.panelActive .header__siteLogo--white {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
   transition: all 1s ease;
 }
 #header.panelActive .header__siteLogo--black {
-  transform: translateX(-100%);
-  opacity: 1;
-  transition: opacity 1s ease;
+  animation: blackMenuLogoVisible 0.5s ease-in-out;
 }
 #header.panelActive .header__menu {
   color: #222;
@@ -732,6 +729,14 @@ a:hover {
   z-index: 100;
 }
 
+@keyframes blackMenuLogoVisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
@@ -897,6 +902,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 63px;
+  padding: 0 16px;
 }
 @media screen and (max-width: 768px) {
   .menu__wrapper {
