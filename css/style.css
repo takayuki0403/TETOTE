@@ -475,6 +475,7 @@
 @media screen and (max-width: 768px) {
   .c-defList__term {
     width: 30%;
+    margin-bottom: 1em;
   }
 }
 
@@ -2724,7 +2725,6 @@ a:hover {
 @media screen and (max-width: 768px) {
   .benefitVoice {
     padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 
@@ -2759,6 +2759,7 @@ a:hover {
 
 .benefitVoice__image {
   margin-top: 36px;
+  margin-bottom: 80px;
 }
 
 .benefitVoice__image img {
