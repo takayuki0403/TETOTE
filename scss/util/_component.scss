@@ -331,6 +331,7 @@
   line-height: 1.5;
   text-decoration: underline;
   @include sp {
+    margin-top: 8px;
     font-size: 1.4rem;
   }
 }

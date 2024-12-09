@@ -350,6 +350,7 @@
 }
 @media screen and (max-width: 768px) {
   .c-card__title {
+    margin-top: 8px;
     font-size: 1.4rem;
   }
 }
@@ -2521,16 +2522,16 @@ a:hover {
   }
 }
 
-.blogIndex .c-cardList {
+.blogIndexPage .c-cardList {
   margin-bottom: 98px;
 }
 @media screen and (max-width: 768px) {
-  .blogIndex .c-cardList {
+  .blogIndexPage .c-cardList {
     margin-top: 0;
     margin-bottom: 40px;
   }
 }
-.blogIndex .c-card {
+.blogIndexPage .c-card {
   background-color: #FAF7F1;
 }
 
