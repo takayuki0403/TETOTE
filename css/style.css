@@ -2665,7 +2665,13 @@ a:hover {
   display: block;
   width: 1px;
   height: 56px;
+  margin: 0 4em;
   background-color: #222;
+}
+@media screen and (max-width: 768px) {
+  .blogPager__line {
+    margin: 0 1em;
+  }
 }
 
 .blogPager__mark {
