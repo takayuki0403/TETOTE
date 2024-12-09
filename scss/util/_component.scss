@@ -179,6 +179,7 @@
 .c-memberList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 43px;
 
   @include sp {

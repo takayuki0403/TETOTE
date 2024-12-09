@@ -182,6 +182,7 @@
 .c-memberList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 43px;
 }
 @media screen and (max-width: 768px) {
@@ -2479,6 +2480,10 @@ a:hover {
   font-weight: bold;
   line-height: 1.8;
   text-align: center;
+}
+
+.otherStaff__memberList-wrap {
+  margin: 0 auto;
 }
 
 /* pageVisual-blog
