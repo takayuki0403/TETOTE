@@ -36,7 +36,11 @@
   display: block;
   width: 1px;
   height: 56px;
+  margin: 0 4em;
   background-color: $black;
+  @include sp {
+    margin: 0 1em;
+  }
 }
 
 .blogPager__mark {
