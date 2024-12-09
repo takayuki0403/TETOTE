@@ -408,18 +408,20 @@
 .c-pageHead__list {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   margin-top: 70px;
   margin-bottom: 97px;
 }
 @media screen and (max-width: 768px) {
   .c-pageHead__list {
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     margin-top: 40px;
   }
 }
 
 .c-pageHead__item {
+  position: relative;
   width: 294px;
   text-align: center;
   border: 1px solid #222;
@@ -429,6 +431,8 @@
 @media screen and (max-width: 768px) {
   .c-pageHead__item {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
@@ -439,7 +443,10 @@
 }
 
 .c-pageHead__link > i {
-  padding-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
 }
 
 .c-defList {
@@ -472,12 +479,14 @@
 
 .c-defList__desc {
   width: 76%;
+  max-width: 90%;
   line-height: 1.5;
   color: #222;
 }
 @media screen and (max-width: 768px) {
   .c-defList__desc {
-    width: 69.5%;
+    width: 100%;
+    padding-right: 1.5em;
   }
 }
 
@@ -2920,6 +2929,7 @@ a:hover {
 .faq-accordion__defTerm {
   position: relative;
   width: 100%;
+  padding-right: 2.5em;
   cursor: pointer;
 }
 

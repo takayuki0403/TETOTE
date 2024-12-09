@@ -388,23 +388,27 @@
 .c-pageHead__list {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   margin-top: 70px;
   margin-bottom: 97px;
   @include sp {
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     margin-top: 40px;
   }
   
 }
 .c-pageHead__item {
+  position: relative;
   width: 294px;
-  text-align: center;;
+  text-align: center;
   border: 1px solid $black;
   border-radius: 21px;
   background-color: $bgColor;
   @include sp {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 .c-pageHead__link {
@@ -413,7 +417,8 @@
   font-weight: bold;
 }
 .c-pageHead__link > i {
-  padding-left: 20px;
+  @include posCenterY;
+  right: 24px;
 }
 
 
@@ -442,10 +447,12 @@
 
 .c-defList__desc {
   width: 76%;
+  max-width: 90%;
   line-height: 1.5;
   color: #222;
   @include sp {
-    width: 69.5%;
+    width: 100%;
+    padding-right: 1.5em;
   }
 }
 .c-defList__descItem {
