@@ -2854,6 +2854,10 @@ a:hover {
   max-width: 100%;
 }
 
+.careerHead__caption {
+  margin-top: 37px;
+}
+
 /* careerProgram
 ============================= */
 .careerProgram__wrapper {
@@ -2871,7 +2875,7 @@ a:hover {
 
 .careerProgram__title {
   padding: 8px 0 8px 21px;
-  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 6.875vw, 2.4rem);
   font-weight: bold;
   background-color: #AFA86F;
   border-radius: 10px;
