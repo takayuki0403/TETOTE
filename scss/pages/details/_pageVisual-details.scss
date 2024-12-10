@@ -5,8 +5,9 @@
 .detailsPage .pageVisual {
   background-image: url(../img/pageVisual/details-fv.jpg);
   background-position: 0 45%;
+  background-size: 120%;
   @include sp {
-    background-size: 120%;
+    background-size: 150%;
     background-position: 0 35%;
   }
 }

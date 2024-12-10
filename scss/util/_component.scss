@@ -413,50 +413,11 @@
   }
 }
 .c-pageHead__link {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
   line-height: 2;
   font-weight: bold;
 }
 .c-pageHead__link > i {
   @include posCenterY;
   right: 24px;
-}
-
-
-//dl,dt,dd
-.c-defList {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  padding: 36px 0;
-  border-bottom: 1px solid $subColor;
-}
-.c-defList:first-of-type {
-  margin-top: 113px;
-  border-top: 1px solid $subColor;
-  @include sp {
-    margin-top: 48px;
-  }
-}
-.c-defList__term {
-  width: 23.5%;
-  color: #222;
-  @include sp {
-    width: 30%;
-    margin-bottom: 1em;
-  }
-}
-
-.c-defList__desc {
-  width: 76%;
-  max-width: 90%;
-  line-height: 1.5;
-  color: #222;
-  @include sp {
-    width: 100%;
-    padding-right: 1.5em;
-  }
-}
-.c-defList__descItem {
-  line-height: 1.5;
 }

@@ -2,50 +2,68 @@
 
 /* faq-accordion
 ============================= */
-.faq-accordion-container {
+.faq-accordion__inner {
   padding-bottom: 139px;
   @include sp {
     padding-bottom: 80px;
   }
 }
 
-.faq-accordion__inner {
+.faq-accordion__container {
   margin-top: 88px;
 }
 
+
 .faq-accordion__defList {
-  padding-left: 36px;
-  padding-right: 36px;
+  margin-top: 113px;
+  text-indent: 1em;
+  @include sp {
+    margin-top: 32px;
+    text-indent: 0;
+  }
+}
+
+.faq-accordion__item {
+  padding: 36px 0;
+  border-bottom: 1px solid $subColor;
+  overflow: hidden;
   @include sp {
     padding-left: 1.5em;
     padding-right: 0;
   }
 }
 
-.faq-accordion__defList:first-child {
-  margin-top: 113px;
+.faq-accordion__item:first-child {
+  border-top: 1px solid $subColor;
 }
 
 .faq-accordion__defTerm {
   position: relative;
-  width: 100%;
   padding-right: 2.5em;
+  padding-left: 1em;
   cursor: pointer;
+  @include sp {
+    padding-left: 0;
+  }
 }
 
 .faq-accordion__defTerm::before {
   @include posCenterY;
   content: "q";
-  left: -1em;
+  left: -0.5em;
   font-family: 'Viga';
   font-size: 2.4rem;
   color: $subColor;
   text-transform: uppercase;
+  @include sp {
+    left: -1em;
+  }
 }
 
+.faq-accordion__mark::before,
 .faq-accordion__defTerm::after {
   @include posCenterY;
-  content: "＋";
+  content: "";
   right: 0;
   font-size: 2.4rem;
   color: $subColor;
@@ -53,15 +71,26 @@
   transition: transform .3s, rotate .3s;
 }
 
-.faq-accordion__defTerm.is-active::after {
-  content: "ー";
-  top: 0;
-  transform: rotate(180deg);
+.faq-accordion__defDesc {
+  width: 76%;
+  max-height: 0;
+  padding-left: 1em;
+  padding-top: 0;
+  line-height: 1.5;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, padding-top 0.3s ease, visibility 0.3s, opacity 0.3s;
+  @include sp {
+    width: 100%;
+    padding-right: 1.5em;
+    padding-left: 0;
+  }
 }
 
-.faq-accordion__defDesc {
-  max-height: 0;
-  padding-top: 36px;
-  overflow: hidden;
-  transition: max-height .3s ease;
+.faq-accordion__item.is-active .faq-accordion__defDesc  {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 22px;
+  box-sizing: content-box;
 }
+

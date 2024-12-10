@@ -51,16 +51,36 @@ links.forEach((link) => {
 });
 
 
-//accordion menu
-document.querySelectorAll('.faq-accordion__defTerm').forEach(term => {
-  term.addEventListener('click', function() {
-    const desc = this.nextElementSibling;
-    const isActive = this.classList.toggle('is-active');
+// accordion menu
+// const accordions = document.querySelectorAll(".faq-accordion__defList");
+// accordions.forEach((accordion) => {
 
-    if (isActive) {
-      desc.style.maxHeight = desc.scrollHeight + 'px';
+//   const accordionTriggers = document.querySelectorAll(".c-accordion-trigger");
+//   accordionTriggers.forEach((trigger) => {
+//     trigger.addEventListener('click', () => {
+//       trigger.classList.toggle(".is-active");
+
+//       const content = trigger.querySelector(".c-defList__desc");
+//       slideToggle(content);
+//     });
+//   });
+// });
+
+const accordionButtons = document.querySelectorAll(".js-accordion-trigger");
+
+accordionButtons.forEach((accordionButton) => {
+  accordionButton.addEventListener('click', (e) => {
+    const body = e.currentTarget.nextElementSibling;
+    const textHeight = body.scrollHeight;
+    const item = e.currentTarget.parentNode;
+
+    item.classList.toggle('is-active');
+
+    if(item.classList.contains('is-active')) {
+      body.style.maxHeight = textHeight + 'px';
     } else {
-      desc.style.maxHeight = 0;
+      body.style.maxHeight = '0';
+      // body.style.paddingTop = '0';
     }
   });
 });
