@@ -14,6 +14,7 @@
 .entryPage__content {
   margin: 0 auto;
   padding: 58px 71px 81px;
+  text-align: center;
   background-color: #fff;
   @include sp {
     padding: 24px 16px 40px;
@@ -48,6 +49,7 @@
   margin-top: 51px;
   padding-bottom: 95px;
   line-height: 1.5;
+  text-align: left;
   border-bottom: 1px dotted $mainColor;
   @include sp {
     margin-top: 40px;

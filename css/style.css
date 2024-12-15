@@ -498,6 +498,16 @@ a:hover {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .pc-only {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .sp-only {
+    display: none;
+  }
+}
 .ly-headerPadding {
   padding-top: 118px;
 }
@@ -2997,6 +3007,7 @@ a:hover {
 .entryPage__content {
   margin: 0 auto;
   padding: 58px 71px 81px;
+  text-align: center;
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -3039,6 +3050,7 @@ a:hover {
   margin-top: 51px;
   padding-bottom: 95px;
   line-height: 1.5;
+  text-align: left;
   border-bottom: 1px dotted #988C2C;
 }
 @media screen and (max-width: 768px) {
