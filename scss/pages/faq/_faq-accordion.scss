@@ -24,7 +24,7 @@
 }
 
 .faq-accordion__item {
-  padding: 36px 0;
+  padding: 36px 2.5em 36px 0;
   border-bottom: 1px solid $subColor;
   overflow: hidden;
   @include sp {
@@ -39,7 +39,6 @@
 
 .faq-accordion__defTerm {
   position: relative;
-  padding-right: 2.5em;
   padding-left: 1em;
   cursor: pointer;
   @include sp {
@@ -61,14 +60,18 @@
 }
 
 .faq-accordion__mark::before,
-.faq-accordion__defTerm::after {
+.faq-accordion__mark::after {
   @include posCenterY;
   content: "";
   right: 0;
   display: block;
-  color: $subColor;
-  text-transform: uppercase;
+  width: 16px;
+  height: 2px;
+  background-color: $subColor;
   transition: transform .3s, rotate .3s;
+}
+.faq-accordion__mark::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .faq-accordion__defDesc {
@@ -93,4 +96,7 @@
   padding-top: 22px;
   box-sizing: content-box;
 }
-
+.faq-accordion__item.is-active .faq-accordion__mark::before,
+.faq-accordion__item.is-active .faq-accordion__mark::after {
+  transform: rotate(180deg);
+}

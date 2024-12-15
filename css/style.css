@@ -2890,7 +2890,7 @@ a:hover {
 }
 
 .faq-accordion__item {
-  padding: 36px 0;
+  padding: 36px 2.5em 36px 0;
   border-bottom: 1px solid #AFA86F;
   overflow: hidden;
 }
@@ -2907,7 +2907,6 @@ a:hover {
 
 .faq-accordion__defTerm {
   position: relative;
-  padding-right: 2.5em;
   padding-left: 1em;
   cursor: pointer;
 }
@@ -2935,16 +2934,21 @@ a:hover {
 }
 
 .faq-accordion__mark::before,
-.faq-accordion__defTerm::after {
+.faq-accordion__mark::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   content: "";
   right: 0;
   display: block;
-  color: #AFA86F;
-  text-transform: uppercase;
+  width: 16px;
+  height: 2px;
+  background-color: #AFA86F;
   transition: transform 0.3s, rotate 0.3s;
+}
+
+.faq-accordion__mark::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .faq-accordion__defDesc {
@@ -2970,6 +2974,11 @@ a:hover {
   opacity: 1;
   padding-top: 22px;
   box-sizing: content-box;
+}
+
+.faq-accordion__item.is-active .faq-accordion__mark::before,
+.faq-accordion__item.is-active .faq-accordion__mark::after {
+  transform: rotate(180deg);
 }
 
 /* entryPage
