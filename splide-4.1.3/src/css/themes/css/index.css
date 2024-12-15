@@ -322,14 +322,14 @@
   padding: 1em 0;
   right: 0.5em;
   top: 0;
-}/*# sourceMappingURL=index.css.map */prev svg {
-  transform: scaleX(1);
-}
-.splide__arrows--rtl .splide__arrow--next {
-  left: 1em;
-  right: auto;
-}
-.splide__arrows--rtl .splide__arrow--next svg {
+}/*# sourceMappingURL=index.css.map */: 0;
+  display: flex;
+  flex-direction: column;
+  left: auto;
+  padding: 1em 0;
+  right: 0.5em;
+  top: 0;
+}/*# sourceMappingURL=index.css.map */ow--next svg {
   transform: scaleX(-1);
 }
 

@@ -2941,7 +2941,7 @@ a:hover {
   transform: translateY(-50%);
   content: "";
   right: 0;
-  font-size: 2.4rem;
+  display: block;
   color: #AFA86F;
   text-transform: uppercase;
   transition: transform 0.3s, rotate 0.3s;

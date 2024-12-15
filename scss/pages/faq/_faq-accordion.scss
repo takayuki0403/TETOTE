@@ -65,7 +65,7 @@
   @include posCenterY;
   content: "";
   right: 0;
-  font-size: 2.4rem;
+  display: block;
   color: $subColor;
   text-transform: uppercase;
   transition: transform .3s, rotate .3s;
