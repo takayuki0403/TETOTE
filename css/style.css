@@ -2997,7 +2997,6 @@ a:hover {
 .entryPage__content {
   margin: 0 auto;
   padding: 58px 71px 81px;
-  text-align: center;
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -3047,6 +3046,10 @@ a:hover {
     margin-top: 40px;
     padding-bottom: 40px;
   }
+}
+
+.entryPage__read > span {
+  color: #988C2C;
 }
 
 .entryPage__form {

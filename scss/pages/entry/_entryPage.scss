@@ -14,7 +14,6 @@
 .entryPage__content {
   margin: 0 auto;
   padding: 58px 71px 81px;
-  text-align: center;
   background-color: #fff;
   @include sp {
     padding: 24px 16px 40px;
@@ -54,6 +53,9 @@
     margin-top: 40px;
     padding-bottom: 40px;
   }
+}
+.entryPage__read > span {
+  color: $mainColor;
 }
 
 .entryPage__form {
