@@ -1,0 +1,100 @@
+@use '../../util/index' as *;
+
+/* toppage > toppage-fadeIn
+============================= */
+.page-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.page-fade-in.show {
+  opacity: 1;
+}
+.firstView__siteTitle--fade-in {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity .5s linear, transform 1s ease;
+}
+.firstView__siteTitle--fade-in.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.slickArea__slickImg {
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideTopLeft {
+  0% {
+    transform: translate(-30px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+@keyframes slideTopRight {
+  0% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+@keyframes slideBottomLeft {
+  0% {
+    transform: translate(-30px, 30px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+@keyframes slideBottomRight {
+  0% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-30px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1.1);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(30px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1.1);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(30px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0, 0) scale(1.1);
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-30px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0, 0) scale(1.1);
+  }
+}
+

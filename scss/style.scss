@@ -10,6 +10,7 @@
 @use 'layout/pageVisual';
 
 //toppage
+@use 'pages/toppage/toppage-fadeIn';
 @use 'pages/toppage/firstview';
 @use 'pages/toppage/intro';
 @use 'pages/toppage/member';

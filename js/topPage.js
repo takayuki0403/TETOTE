@@ -1,3 +1,22 @@
+//page-fade-in
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.querySelector('body');
+  body.classList.add('show');
+
+  const siteTitle = document.querySelector('.firstView__siteTitle');
+  setTimeout(() => {
+    siteTitle.classList.add('show');
+  }, 500);
+
+  const images = document.querySelectorAll('.slickArea__slickImg');
+  const animations = ['slideTopLeft', 'slideTopRight', 'slideBottomLeft', 'slideBottomRight', 'slideLeft', 'slideRight', 'slideTop', 'slideBottom']
+
+  images.forEach(image => {
+    const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+    image.style.animationName = randomAnimation;
+  });
+});
+
 /* splide__firstView*/
 const splide__firstView_options = {
   type: 'fade',  
